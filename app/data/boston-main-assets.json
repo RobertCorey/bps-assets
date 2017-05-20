@@ -1,0 +1,2203 @@
+{
+  "assets": [{
+    "lat": 42.35671,
+    "long": -71.16367,
+    "name": "Acosta, Jacqueline"
+  }, {
+    "lat": 42.34011,
+    "long": -71.15474,
+    "name": "Alexander Hamilton After School Program"
+  }, {
+    "lat": 42.346055,
+    "long": -71.145768,
+    "name": "Allston-Brighton Head Start"
+  }, {
+    "lat": 42.36076,
+    "long": -71.13411,
+    "name": "Allston Brighton YMCA GESS Program"
+  }, {
+    "lat": 42.35191,
+    "long": -71.132,
+    "name": "APAC Child And Family Service Ctr. Child Care"
+  }, {
+    "lat": 42.354829,
+    "long": -71.133746,
+    "name": "APAC Child And Family Service Ctr. Child Care"
+  }, {
+    "lat": 42.34185,
+    "long": -71.14928,
+    "name": "Bangera, Vasanti G."
+  }, {
+    "lat": 42.352636,
+    "long": -71.126971,
+    "name": "Bright Horizon’s Children’s Center-Allston"
+  }, {
+    "lat": 42.352159,
+    "long": -71.127132,
+    "name": "Brighton/Allston Afterschool Enrichment Prog."
+  }, {
+    "lat": 42.35296,
+    "long": -71.06108,
+    "name": "Child Care Choices of Boston, resources and referral for child care"
+  }, {
+    "lat": 42.34488,
+    "long": -71.13764,
+    "name": "Christakis, Tasia"
+  }, {
+    "lat": 42.34558,
+    "long": -71.16019,
+    "name": "Citizen Schools at The Edison Middle School"
+  }, {
+    "lat": 42.360048,
+    "long": -71.141617,
+    "name": "Conetta, Lucy A"
+  }, {
+    "lat": 42.352549,
+    "long": -71.048527,
+    "name": "Department of Early Education and Care"
+  }, {
+    "lat": 42.358,
+    "long": -71.12888,
+    "name": "Evangelista, Teresa"
+  }, {
+    "lat": 42.35537,
+    "long": -71.13028,
+    "name": "Fairy Tale Children’s Center Inc."
+  }, {
+    "lat": 42.345445,
+    "long": -71.143532,
+    "name": "Fidelis Child Care Center"
+  }, {
+    "lat": 42.34923,
+    "long": -71.16558,
+    "name": "Giuan, Wei Xui"
+  }, {
+    "lat": 42.34378,
+    "long": -71.1559,
+    "name": "Gluckin, Ruth"
+  }, {
+    "lat": 42.353125,
+    "long": -71.137454,
+    "name": "Jackson-Mann Community Center School-Afterschool"
+  }, {
+    "lat": 42.353125,
+    "long": -71.137454,
+    "name": "Jackson-Mann Community Preschool"
+  }, {
+    "lat": 42.35774,
+    "long": -71.12767,
+    "name": "Kabary, Ummul K"
+  }, {
+    "lat": 42.34585,
+    "long": -71.15878,
+    "name": "Keady, Cheryl A."
+  }, {
+    "lat": 42.35129,
+    "long": -71.16353,
+    "name": "Leung, Kam Yee"
+  }, {
+    "lat": 42.33799,
+    "long": -71.14993,
+    "name": "Leventhal-Sidman Jcc/Brookline Preschool"
+  }, {
+    "lat": 42.353286,
+    "long": -71.145322,
+    "name": "Luo, Yu Li"
+  }, {
+    "lat": 42.35568,
+    "long": -71.13802,
+    "name": "Mahamad, Amina"
+  }, {
+    "lat": 42.34872,
+    "long": -71.16651,
+    "name": "Mchugh, Siobhan"
+  }, {
+    "lat": 42.34545,
+    "long": -71.14421,
+    "name": "Mendez, Nalda"
+  }, {
+    "lat": 42.347593,
+    "long": -71.155348,
+    "name": "Oak Square YMCA @ Winship"
+  }, {
+    "lat": 42.350913,
+    "long": -71.167136,
+    "name": "Oak Square YMCA SACC Program"
+  }, {
+    "lat": 42.34081,
+    "long": -71.14447,
+    "name": "Parents’ Center At Saltonstall House"
+  }, {
+    "lat": 42.352109,
+    "long": -71.14253,
+    "name": "Pine Village Preschool"
+  }, {
+    "lat": 42.360913,
+    "long": -71.137637,
+    "name": "Pine Village Preschool"
+  }, {
+    "lat": 42.34578,
+    "long": -71.14465,
+    "name": "Reyes, Hiraida M."
+  }, {
+    "lat": 42.351727,
+    "long": -71.134379,
+    "name": "Rivendell Child Care Center"
+  }, {
+    "lat": 42.34712,
+    "long": -71.14424,
+    "name": "Rodriguez, Gladys A."
+  }, {
+    "lat": 42.35678,
+    "long": -71.16065,
+    "name": "Ryan, Monica"
+  }, {
+    "lat": 42.349574,
+    "long": -71.147979,
+    "name": "St. E’s Children’s Center"
+  }, {
+    "lat": 42.35886,
+    "long": -71.13016,
+    "name": "Suarez De Mejia, Angela"
+  }, {
+    "lat": 42.352679,
+    "long": -71.135099,
+    "name": "Wonder Years, Inc."
+  }, {
+    "lat": 42.35298,
+    "long": -71.14219,
+    "name": "Wong, Ai Fei Wu"
+  }, {
+    "lat": 42.346185,
+    "long": -71.139601,
+    "name": "Wu, Tan Man"
+  }, {
+    "lat": 42.33982,
+    "long": -71.15276,
+    "name": "Yal-Day-New Day Care Center"
+  }, {
+    "lat": 42.339992,
+    "long": -71.152629,
+    "name": "Yal-Day-New Day Care Center"
+  }, {
+    "lat": 42.340309,
+    "long": -71.073109,
+    "name": "BCYF Blackstone Community Center"
+  }, {
+    "lat": 42.380837,
+    "long": -71.061037,
+    "name": "BCYF Charlestown Community Center"
+  }, {
+    "lat": 42.379765,
+    "long": -71.069918,
+    "name": "BCYF Golden Age Center"
+  }, {
+    "lat": 42.353125,
+    "long": -71.137454,
+    "name": "BCYF Jackson/Mann Community Center"
+  }, {
+    "lat": 42.325886,
+    "long": -71.070725,
+    "name": "BCYF Mason Pool"
+  }, {
+    "lat": 42.365274,
+    "long": -71.054413,
+    "name": "BCYF Nazzaro Community Center"
+  }, {
+    "lat": 42.372879,
+    "long": -71.037528,
+    "name": "BCYF Paris Street Community Center"
+  }, {
+    "lat": 42.388889,
+    "long": -71.01082,
+    "name": "BCYF Pino Community Center"
+  }, {
+    "lat": 42.34797,
+    "long": -71.06492,
+    "name": "BCYF Quincy Community Center"
+  }, {
+    "lat": 42.331005,
+    "long": -71.08793,
+    "name": "BCYF Recreation Center at Madison Park"
+  }, {
+    "lat": 42.326802,
+    "long": -71.076707,
+    "name": "BCYF Vine Street Community Center"
+  }, {
+    "lat": 42.29411,
+    "long": -71.08628,
+    "name": "Blue Hill Club"
+  }, {
+    "lat": 42.3249,
+    "long": -71.10136,
+    "name": "Bromley Health Management Office"
+  }, {
+    "lat": 42.380837,
+    "long": -71.061037,
+    "name": "Charlestown Mother's Association"
+  }, {
+    "lat": 42.376396,
+    "long": -71.053408,
+    "name": "Charlestown YMCA"
+  }, {
+    "lat": 42.3226,
+    "long": -71.07247,
+    "name": "Children Services of Roxbury"
+  }, {
+    "lat": 42.300789,
+    "long": -71.06177,
+    "name": "Cleveland"
+  }, {
+    "lat": 42.34862,
+    "long": -71.09112,
+    "name": "Communities for People"
+  }, {
+    "lat": 42.338017,
+    "long": -71.052151,
+    "name": "Condon Club"
+  }, {
+    "lat": 42.308828,
+    "long": -71.115081,
+    "name": "Curtis Hall Community Center"
+  }, {
+    "lat": 42.35366,
+    "long": -71.13489,
+    "name": "Deaf Inc"
+  }, {
+    "lat": 42.31966,
+    "long": -71.096553,
+    "name": "Dimock"
+  }, {
+    "lat": 42.30528,
+    "long": -71.081251,
+    "name": "Dorchester YMCA Columbia I&II"
+  }, {
+    "lat": 42.328087,
+    "long": -71.083642,
+    "name": "Dudley Literacy Center"
+  }, {
+    "lat": 42.32278,
+    "long": -71.0727,
+    "name": "Dudley Street Neighborhood Initative"
+  }, {
+    "lat": 42.374213,
+    "long": -71.039601,
+    "name": "East Boston Social Center"
+  }, {
+    "lat": 42.373483,
+    "long": -71.033146,
+    "name": "East Boston YMCA"
+  }, {
+    "lat": 42.30515,
+    "long": -71.06876,
+    "name": "Family Nuturing Center"
+  }, {
+    "lat": 42.314822,
+    "long": -71.096824,
+    "name": "Family Resource Center"
+  }, {
+    "lat": 42.3026,
+    "long": -71.08507,
+    "name": "Harvard st Neighborhood: Alexis Mireille C, DDS"
+  }, {
+    "lat": 42.32621,
+    "long": -71.10686,
+    "name": "Hennigan Community Center"
+  }, {
+    "lat": 42.30561,
+    "long": -71.073858,
+    "name": "Holland"
+  }, {
+    "lat": 42.35772,
+    "long": -71.14748,
+    "name": "Home for Little Wanderes"
+  }, {
+    "lat": 42.340653,
+    "long": -71.08728,
+    "name": "Huntington Ave YMCA"
+  }, {
+    "lat": 42.25719,
+    "long": -71.12041,
+    "name": "Hyde Park YMCA"
+  }, {
+    "lat": 42.372276,
+    "long": -71.061689,
+    "name": "J.F.K. Family Service Center"
+  }, {
+    "lat": 42.377084,
+    "long": -71.055814,
+    "name": "John F. Kennedy Family Service Center, Inc."
+  }, {
+    "lat": 42.306,
+    "long": -71.1096,
+    "name": "JP Community Center English High"
+  }, {
+    "lat": 42.328718,
+    "long": -71.08209,
+    "name": "Madison Park Development Corporation"
+  }, {
+    "lat": 42.32448,
+    "long": -71.102,
+    "name": "Martha Eliot Community Center"
+  }, {
+    "lat": 42.275807,
+    "long": -71.104089,
+    "name": "Mattahunt Club"
+  }, {
+    "lat": 42.294204,
+    "long": -71.049204,
+    "name": "Murphy"
+  }, {
+    "lat": 42.294204,
+    "long": -71.049204,
+    "name": "Murphy Community Center"
+  }, {
+    "lat": 42.31841,
+    "long": -71.095369,
+    "name": "New Academy Estates"
+  }, {
+    "lat": 42.350913,
+    "long": -71.167136,
+    "name": "Oak Square YMCA"
+  }, {
+    "lat": 42.26075,
+    "long": -71.14961,
+    "name": "Ohrenberger Community Center"
+  }, {
+    "lat": 42.328718,
+    "long": -71.08209,
+    "name": "Osiris Family Institute"
+  }, {
+    "lat": 42.292016,
+    "long": -71.080517,
+    "name": "Perkins"
+  }, {
+    "lat": 42.321642,
+    "long": -71.07199,
+    "name": "Project Hope"
+  }, {
+    "lat": 42.31352,
+    "long": -71.07925,
+    "name": "Quincy Geneva Housing Development"
+  }, {
+    "lat": 42.325501,
+    "long": -71.099302,
+    "name": "Refugees & Immigrants Assistance Center"
+  }, {
+    "lat": 42.287013,
+    "long": -71.149339,
+    "name": "Roche Family Community Center"
+  }, {
+    "lat": 42.286505,
+    "long": -71.1277,
+    "name": "Roslindale Community Center"
+  }, {
+    "lat": 42.31616,
+    "long": -71.08263,
+    "name": "Roxbury Multi-Service Center"
+  }, {
+    "lat": 42.317878,
+    "long": -71.082592,
+    "name": "Roxbury YMCA"
+  }, {
+    "lat": 42.334797,
+    "long": -71.049588,
+    "name": "South Boston Club"
+  }, {
+    "lat": 42.31382,
+    "long": -71.06317,
+    "name": "St. Mary's Shelter"
+  }, {
+    "lat": 42.31382,
+    "long": -71.06317,
+    "name": "St. Mary's Women's Center"
+  }, {
+    "lat": 42.362331,
+    "long": -71.060646,
+    "name": "Temp. Home for Women and Children"
+  }, {
+    "lat": 42.334887,
+    "long": -71.038508,
+    "name": "Tynan"
+  }, {
+    "lat": 42.340704,
+    "long": -71.081235,
+    "name": "United South End Settlement House"
+  }, {
+    "lat": 42.34097,
+    "long": -71.0758,
+    "name": "Villa Victoria Center for the Arts"
+  }, {
+    "lat": 42.28566,
+    "long": -71.12752,
+    "name": "Village Preschool"
+  }, {
+    "lat": 42.28317,
+    "long": -71.15628,
+    "name": "W. Roxbury/ Roslindale YMCA"
+  }, {
+    "lat": 42.335264,
+    "long": -71.04275,
+    "name": "Walsh"
+  }, {
+    "lat": 42.28226,
+    "long": -71.17434,
+    "name": "West Roxbury Community Center"
+  }, {
+    "lat": 42.28355,
+    "long": -71.15737,
+    "name": "West Roxbury Public Library"
+  }, {
+    "lat": 42.330454,
+    "long": -71.082888,
+    "name": "Y.O. Unlimited"
+  }, {
+    "lat": 42.306327,
+    "long": -71.076837,
+    "name": "Yawkey Kombit Kreyol Center"
+  }, {
+    "lat": 42.35366,
+    "long": -71.13489,
+    "name": "D.E.A.F., Inc"
+  }, {
+    "lat": 42.384749,
+    "long": -71.071617,
+    "name": "Federation for Children with Special Needs"
+  }, {
+    "lat": 42.349574,
+    "long": -71.147979,
+    "name": "REACH Program at Caritas St. Elizabeth’s Medical Center"
+  }, {
+    "lat": 42.34214,
+    "long": -71.08627,
+    "name": "The Home for Little Wanderers"
+  }, {
+    "lat": 42.297317,
+    "long": -71.050908,
+    "name": "Bay Cove Human Services"
+  }, {
+    "lat": 42.32448,
+    "long": -71.102,
+    "name": "Children’s Community Early Intervention Program (EIP)"
+  }, {
+    "lat": 42.2871,
+    "long": -71.15176,
+    "name": "Criterion – Boston Early Intervention Program"
+  }, {
+    "lat": 42.30855,
+    "long": -71.108,
+    "name": "Thom Boston Metro Early Intervention"
+  }, {
+    "lat": 42.30855,
+    "long": -71.108,
+    "name": "Thom Boston Regional Consultation Program"
+  }, {
+    "lat": 42.30515,
+    "long": -71.06876,
+    "name": "Allston-Brighton Family Network"
+  }, {
+    "lat": 42.35205,
+    "long": -71.1377,
+    "name": "Boston Connects"
+  }, {
+    "lat": 42.333951,
+    "long": -71.075042,
+    "name": "Healthy Baby/Healthy Child program"
+  }, {
+    "lat": 42.310115,
+    "long": -71.106766,
+    "name": "MSPCC Massachusetts Society for the Prevention of Cruelty to Children"
+  }, {
+    "lat": 42.33829,
+    "long": -71.07492,
+    "name": "South End WIC Program"
+  }, {
+    "lat": 42.334711,
+    "long": -71.074164,
+    "name": "South End WIC Program"
+  }, {
+    "lat": 42.355111,
+    "long": -71.063003,
+    "name": "Bridge Over Troubled Waters"
+  }, {
+    "lat": 42.30815,
+    "long": -71.10183,
+    "name": "Casa Nueva Vida"
+  }, {
+    "lat": 42.32278,
+    "long": -71.0727,
+    "name": "Children's Services of Roxbury"
+  }, {
+    "lat": 42.353223,
+    "long": -71.166109,
+    "name": "Crittenton Hastings House"
+  }, {
+    "lat": 42.353223,
+    "long": -71.166109,
+    "name": "Crittenton Hastings House - Scattered Site"
+  }, {
+    "lat": 42.371036,
+    "long": -71.04022,
+    "name": "Crossroads"
+  }, {
+    "lat": 42.376425,
+    "long": -71.053306,
+    "name": "Dennis McLaughlin House"
+  }, {
+    "lat": 42.31891,
+    "long": -71.09608,
+    "name": "Elizabeth Stone House"
+  }, {
+    "lat": 42.340653,
+    "long": -71.08728,
+    "name": "Families In Transition"
+  }, {
+    "lat": 42.35068,
+    "long": -71.05681,
+    "name": "FamilyAid Boston"
+  }, {
+    "lat": 42.384749,
+    "long": -71.071617,
+    "name": "Heading Home - Scattered Sites"
+  }, {
+    "lat": 42.297405,
+    "long": -71.086086,
+    "name": "Hosmer CoSheltering Program"
+  }, {
+    "lat": 42.321047,
+    "long": -71.071923,
+    "name": "Middlesex Human Service Agency"
+  }, {
+    "lat": 42.323427,
+    "long": -71.073838,
+    "name": "Millennium House I"
+  }, {
+    "lat": 42.3235,
+    "long": -71.08772,
+    "name": "Nazareth Residence"
+  }, {
+    "lat": 42.3235,
+    "long": -71.08772,
+    "name": "Nazareth Residence for Mothers and Children"
+  }, {
+    "lat": 42.31382,
+    "long": -71.06317,
+    "name": "Phoenix House"
+  }, {
+    "lat": 42.31382,
+    "long": -71.06317,
+    "name": "Phoenix House Dorchester Treatment Program"
+  }, {
+    "lat": 42.32539,
+    "long": -71.1117,
+    "name": "Portis House"
+  }, {
+    "lat": 42.317342,
+    "long": -71.07064,
+    "name": "Project Hope"
+  }, {
+    "lat": 42.329904,
+    "long": -71.089145,
+    "name": "Renewal House"
+  }, {
+    "lat": 42.342212,
+    "long": -71.098661,
+    "name": "Robert McBride House"
+  }, {
+    "lat": 42.344234,
+    "long": -71.13949,
+    "name": "Seton Manor"
+  }, {
+    "lat": 42.32247,
+    "long": -71.08753,
+    "name": "Sojourner House"
+  }, {
+    "lat": 42.301297,
+    "long": -71.058245,
+    "name": "St. Ambrose Family Shelter"
+  }, {
+    "lat": 42.301297,
+    "long": -71.058245,
+    "name": "St. Ambrose Shelter"
+  }, {
+    "lat": 42.31382,
+    "long": -71.06317,
+    "name": "St. Mary's Women and Infant Center"
+  }, {
+    "lat": 42.362331,
+    "long": -71.060646,
+    "name": "Temporary Home for Women and Children"
+  }, {
+    "lat": 42.355486,
+    "long": -71.130715,
+    "name": "Allston Brighton Community Development Corporation"
+  }, {
+    "lat": 42.358836,
+    "long": -71.058883,
+    "name": "Boston Home Center"
+  }, {
+    "lat": 42.29531,
+    "long": -71.08534,
+    "name": "FORECLOSURE PREVENTION"
+  }, {
+    "lat": 42.275922,
+    "long": -71.080203,
+    "name": "Boston Housing Authority"
+  }, {
+    "lat": 42.327838,
+    "long": -71.067167,
+    "name": "Inspectional Services"
+  }, {
+    "lat": 42.354534,
+    "long": -71.062467,
+    "name": "Massachusetts Bar Lawyer Referral Service"
+  }, {
+    "lat": 42.35845,
+    "long": -71.06084,
+    "name": "MassHousing"
+  }, {
+    "lat": 42.35143,
+    "long": -71.05862,
+    "name": "Metropolitan Boston Housing Partnership (MBHP)"
+  }, {
+    "lat": 42.35487,
+    "long": -71.05806,
+    "name": "National Consumer Law Center"
+  }, {
+    "lat": 42.358836,
+    "long": -71.058883,
+    "name": "Rental Housing Resource Center"
+  }, {
+    "lat": 42.31694,
+    "long": -71.10305,
+    "name": "The Wilmer Hale Legal Services Center"
+  }, {
+    "lat": 42.321253,
+    "long": -71.048731,
+    "name": "1199SEIU United Healthcare Workers East"
+  }, {
+    "lat": 42.3249,
+    "long": -71.10136,
+    "name": "ABCD Citywide Boston Hispanic Center"
+  }, {
+    "lat": 42.28623,
+    "long": -71.13012,
+    "name": "ABCD South Side Head Start Adult ESOL Program"
+  }, {
+    "lat": 42.33452,
+    "long": -71.07629,
+    "name": "ALPHA Immigrant Center"
+  }, {
+    "lat": 42.347469,
+    "long": -71.06253,
+    "name": "American Chinese Christian Educational & Social Services, Inc. (ACCESS)"
+  }, {
+    "lat": 42.34884,
+    "long": -71.061735,
+    "name": "Asian American Civic Association"
+  }, {
+    "lat": 42.28252,
+    "long": -71.06756,
+    "name": "Asian-American National Committee, Inc."
+  }, {
+    "lat": 42.279655,
+    "long": -71.08063,
+    "name": "Association of Haitian Women in Boston"
+  }, {
+    "lat": 42.351308,
+    "long": -71.068878,
+    "name": "Big Sister Association of Greater Boston"
+  }, {
+    "lat": 42.3485,
+    "long": -71.06264,
+    "name": "Boston Asian: Youth Essential Service"
+  }, {
+    "lat": 42.35509,
+    "long": -71.06139,
+    "name": "Boston Center for Independent Living"
+  }, {
+    "lat": 42.333913,
+    "long": -71.073259,
+    "name": "Boston Center for Refugee Health & Human Rights at Boston Medical Center"
+  }, {
+    "lat": 42.346548,
+    "long": -71.06567,
+    "name": "Boston Children's Chorus"
+  }, {
+    "lat": 42.3473,
+    "long": -71.06325,
+    "name": "Boston Chinese Evangelical Church"
+  }, {
+    "lat": 42.35094,
+    "long": -71.14608,
+    "name": "Brazilian Women's Group"
+  }, {
+    "lat": 42.3749,
+    "long": -71.06899,
+    "name": "Bunker Hill Community College - Chelsea Campus"
+  }, {
+    "lat": 42.347261,
+    "long": -71.077679,
+    "name": "Canadian Consulate General, Boston"
+  }, {
+    "lat": 42.368987,
+    "long": -71.03581,
+    "name": "Casa de la Cultura East Boston"
+  }, {
+    "lat": 42.339003,
+    "long": -71.051541,
+    "name": "Catholic Charities Refugee and Immigration Services"
+  }, {
+    "lat": 42.307583,
+    "long": -71.06677,
+    "name": "Catholic Charities Teen Center at St. Peter's"
+  }, {
+    "lat": 42.340677,
+    "long": -71.087279,
+    "name": "Center for Community Health, Education & Research"
+  }, {
+    "lat": 42.350277,
+    "long": -71.06482,
+    "name": "Citi Performing Arts Center Education Department"
+  }, {
+    "lat": 42.291539,
+    "long": -71.064043,
+    "name": "College Bound Dorchester"
+  }, {
+    "lat": 42.27577,
+    "long": -71.07489,
+    "name": "Community Programs-Harbor Health Services Inc."
+  }, {
+    "lat": 42.349868,
+    "long": -71.079231,
+    "name": "Consulate General of Portugal"
+  }, {
+    "lat": 42.33892,
+    "long": -71.14601,
+    "name": "Consulate of Chile in Boston"
+  }, {
+    "lat": 42.358385,
+    "long": -71.053949,
+    "name": "Consulate of Monaco in Boston"
+  }, {
+    "lat": 42.351308,
+    "long": -71.068878,
+    "name": "Consulate of the Dominican Republic"
+  }, {
+    "lat": 42.351308,
+    "long": -71.068878,
+    "name": "Consulate of The Netherlands"
+  }, {
+    "lat": 42.360038,
+    "long": -71.056229,
+    "name": "Consulate of the Republic of Poland"
+  }, {
+    "lat": 42.31208,
+    "long": -71.11163,
+    "name": "Dominican Development Center"
+  }, {
+    "lat": 42.30443,
+    "long": -71.059449,
+    "name": "Dorchester House Multi-Service Center"
+  }, {
+    "lat": 42.28671,
+    "long": -71.04409,
+    "name": "Dorchester Substance Abuse Coalition"
+  }, {
+    "lat": 42.34177,
+    "long": -71.07297,
+    "name": "Inquilinos Boricuas en Accion (IBA)"
+  }, {
+    "lat": 42.32538,
+    "long": -71.075385,
+    "name": "La Alianza Hispana"
+  }, {
+    "lat": 42.35271,
+    "long": -71.14064,
+    "name": "Mass. Alliance of Portuguese Speakers (MAPS)"
+  }, {
+    "lat": 42.360295,
+    "long": -71.05827,
+    "name": "Mayor’s Office of New Bostonians"
+  }, {
+    "lat": 42.347538,
+    "long": -71.152807,
+    "name": "Brighton Branch Library"
+  }, {
+    "lat": 42.351316,
+    "long": -71.167882,
+    "name": "Faneuil Branch Library"
+  }, {
+    "lat": 42.360108,
+    "long": -71.128091,
+    "name": "Honan Allston Branch Library"
+  }, {
+    "lat": 42.320856,
+    "long": -71.11168,
+    "name": "El Mundo"
+  }, {
+    "lat": 42.31075,
+    "long": -71.11383,
+    "name": "The Gazette"
+  }, {
+    "lat": 42.244371,
+    "long": -71.132364,
+    "name": "West Roxbury Bulletin"
+  }, {
+    "lat": 42.349016,
+    "long": -71.142677,
+    "name": "Brighton Allston Mental Health Association (BAMHA)"
+  }, {
+    "lat": 42.3638,
+    "long": -71.13436,
+    "name": "Joseph M Smith Community Health Center"
+  }, {
+    "lat": 42.35178,
+    "long": -71.12766,
+    "name": "The Boston Center, a Program of Arbour Health System"
+  }, {
+    "lat": 42.353125,
+    "long": -71.137454,
+    "name": "The Schools at Jackson-Mann"
+  }, {
+    "lat": 42.36076,
+    "long": -71.13411,
+    "name": "Thomas Gardner Pilot Academy"
+  }, {
+    "lat": 42.360295,
+    "long": -71.05827,
+    "name": "Boston City Hall Neighborhood Services"
+  }, {
+    "lat": 42.3538,
+    "long": -71.05977,
+    "name": "Boston Housing Authority-Community Services"
+  }, {
+    "lat": 42.334128,
+    "long": -71.090838,
+    "name": "Boston Police Headquarters"
+  }, {
+    "lat": 42.327838,
+    "long": -71.067167,
+    "name": "Boston Public Health Commission"
+  }, {
+    "lat": 42.330937,
+    "long": -71.043595,
+    "name": "Casrson Towers"
+  }, {
+    "lat": 42.340083,
+    "long": -71.071191,
+    "name": "Cathedral"
+  }, {
+    "lat": 42.31937,
+    "long": -71.05704,
+    "name": "Catherine Clark"
+  }, {
+    "lat": 42.377379,
+    "long": -71.057191,
+    "name": "Charlestown"
+  }, {
+    "lat": 42.346463,
+    "long": -71.144578,
+    "name": "Commonwealth"
+  }, {
+    "lat": 42.33109,
+    "long": -71.08296,
+    "name": "Dudley Square DTA Office"
+  }, {
+    "lat": 42.31214,
+    "long": -71.05761,
+    "name": "Dudley Terrace Apts"
+  }, {
+    "lat": 42.35672,
+    "long": -71.15216,
+    "name": "Faneuil"
+  }, {
+    "lat": 42.318432,
+    "long": -71.038519,
+    "name": "Harbor Point Apts"
+  }, {
+    "lat": 42.368619,
+    "long": -71.03963,
+    "name": "Heritage"
+  }, {
+    "lat": 42.326648,
+    "long": -71.056221,
+    "name": "Mary Ellen McCormack"
+  }, {
+    "lat": 42.37126,
+    "long": -71.04185,
+    "name": "Maverick Landing"
+  }, {
+    "lat": 42.33354,
+    "long": -71.03489,
+    "name": "Monsignor Powers"
+  }, {
+    "lat": 42.331591,
+    "long": -71.050781,
+    "name": "Old Colony"
+  }, {
+    "lat": 42.32973,
+    "long": -71.07769,
+    "name": "Orchard Gardens"
+  }, {
+    "lat": 42.393277,
+    "long": -71.00914,
+    "name": "Orient Heights"
+  }, {
+    "lat": 42.34075,
+    "long": -71.076128,
+    "name": "Rutland/East Springfield"
+  }, {
+    "lat": 42.329298,
+    "long": -71.086378,
+    "name": "Social Security"
+  }, {
+    "lat": 42.286846,
+    "long": -71.127331,
+    "name": "Social Security"
+  }, {
+    "lat": 42.305739,
+    "long": -71.081195,
+    "name": "Washington Columbia II Apartments"
+  }, {
+    "lat": 42.337809,
+    "long": -71.054838,
+    "name": "West Broadway"
+  }, {
+    "lat": 42.34075,
+    "long": -71.076128,
+    "name": "West Concord"
+  }, {
+    "lat": 42.34075,
+    "long": -71.076128,
+    "name": "West Newton Street"
+  }, {
+    "lat": 42.332956,
+    "long": -71.053017,
+    "name": "West Ninth St"
+  }, {
+    "lat": 42.355456,
+    "long": -71.161191,
+    "name": "Hobart Street Play Area"
+  }, {
+    "lat": 42.353125,
+    "long": -71.137454,
+    "name": "Jackson/Mann Community Center Recreation (age 5 - Adult)"
+  }, {
+    "lat": 42.340322,
+    "long": -71.152029,
+    "name": "Joseph S. Shubow Park"
+  }, {
+    "lat": 42.355103,
+    "long": -71.152389,
+    "name": "McKinney Playground"
+  }, {
+    "lat": 42.355279,
+    "long": -71.136986,
+    "name": "Playground at Penniman Road and Hano Street"
+  }, {
+    "lat": 42.359404,
+    "long": -71.144531,
+    "name": "Portsmouth Street Playground"
+  }, {
+    "lat": 42.359545,
+    "long": -71.125661,
+    "name": "Sorrento"
+  }, {
+    "lat": 42.350488,
+    "long": -71.136708,
+    "name": "Stanley A. Ringer Playground"
+  }, {
+    "lat": 42.334859,
+    "long": -71.152247,
+    "name": "Walter F. Cassidy Playground"
+  }, {
+    "lat": 42.363643,
+    "long": -71.131799,
+    "name": "William F. Smith Playground"
+  }, {
+    "lat": 42.28562,
+    "long": -71.063258,
+    "name": "All Saints Lutheran Church"
+  }, {
+    "lat": 42.32703,
+    "long": -71.08991,
+    "name": "All Saints Pentecostal House of Prayer, Inc."
+  }, {
+    "lat": 42.328041,
+    "long": -71.077355,
+    "name": "Alpha and Omega Church"
+  }, {
+    "lat": 42.336625,
+    "long": -71.093526,
+    "name": "Annunciation Greek Orthodox Cathedral of New England"
+  }, {
+    "lat": 42.32284,
+    "long": -71.06949,
+    "name": "Apostolic Church Boston Assembly"
+  }, {
+    "lat": 42.31998,
+    "long": -71.071966,
+    "name": "Asamblea de Iglesias Cristianas, Inqc."
+  }, {
+    "lat": 42.31033,
+    "long": -71.09212,
+    "name": "Berea Seventh Day Adventist Church"
+  }, {
+    "lat": 42.326055,
+    "long": -71.084805,
+    "name": "Bethel Baptist Church"
+  }, {
+    "lat": 42.316415,
+    "long": -71.086549,
+    "name": "Bethel Pentecostal Church"
+  }, {
+    "lat": 42.30007,
+    "long": -71.06655,
+    "name": "Bethel Pentecostal Haitian Church"
+  }, {
+    "lat": 42.2967,
+    "long": -71.083261,
+    "name": "Bethel Tabernacle Pentecostal Church"
+  }, {
+    "lat": 42.3093,
+    "long": -71.0831,
+    "name": "Beulah Pilgrim Holiness Church"
+  }, {
+    "lat": 42.307386,
+    "long": -71.062224,
+    "name": "Bible Baptist Church"
+  }, {
+    "lat": 42.320928,
+    "long": -71.057365,
+    "name": "Blessed Mother Teresa Parish"
+  }, {
+    "lat": 42.30884,
+    "long": -71.10539,
+    "name": "Boston Islamic Center"
+  }, {
+    "lat": 42.32734,
+    "long": -71.07652,
+    "name": "Boston Missionary Baptist Church"
+  }, {
+    "lat": 42.316996,
+    "long": -71.103097,
+    "name": "Boylston Congregational Church"
+  }, {
+    "lat": 42.30769,
+    "long": -71.06137,
+    "name": "Calvary Church International"
+  }, {
+    "lat": 0,
+    "long": 0,
+    "name": "Calvary Deliverance Ministries"
+  }, {
+    "lat": 42.312776,
+    "long": -71.083741,
+    "name": "Charles Street AME Church"
+  }, {
+    "lat": 42.307217,
+    "long": -71.101367,
+    "name": "Christ the King Parish"
+  }, {
+    "lat": 42.32242,
+    "long": -71.08529,
+    "name": "Church of Christ in Roxbury"
+  }, {
+    "lat": 42.31381,
+    "long": -71.09106,
+    "name": "Church of God and Saints of Christ"
+  }, {
+    "lat": 42.299195,
+    "long": -71.073778,
+    "name": "Church of God Bethel of Boston"
+  }, {
+    "lat": 42.31716,
+    "long": -71.08213,
+    "name": "Church of God of Galilee"
+  }, {
+    "lat": 42.32131,
+    "long": -71.08141,
+    "name": "Church of God of Prophecy, Inc., Roxbury"
+  }, {
+    "lat": 42.317538,
+    "long": -71.105551,
+    "name": "City of Praise family Church"
+  }, {
+    "lat": 42.3124,
+    "long": -71.08194,
+    "name": "Community Gospel Chapel"
+  }, {
+    "lat": 42.3104,
+    "long": -71.08425,
+    "name": "Community House of Prayer & Worship, The"
+  }, {
+    "lat": 42.31735,
+    "long": -71.05646,
+    "name": "Congregacion Beser"
+  }, {
+    "lat": 42.318078,
+    "long": -71.06919,
+    "name": "CrossTown Church"
+  }, {
+    "lat": 42.335211,
+    "long": -71.07941,
+    "name": "Deeper Life Bible Church"
+  }, {
+    "lat": 42.31095,
+    "long": -71.07473,
+    "name": "Deliverance Faith Tabernacle"
+  }, {
+    "lat": 42.33314,
+    "long": -71.0706,
+    "name": "Dominion Christian Church"
+  }, {
+    "lat": 42.31735,
+    "long": -71.05646,
+    "name": "Dorchester Baptist Church"
+  }, {
+    "lat": 42.29688,
+    "long": -71.07197,
+    "name": "Dorchester Cape Verdian SDA Church"
+  }, {
+    "lat": 42.29705,
+    "long": -71.08681,
+    "name": "Dorchester Immanuel Church of the Nazarene"
+  }, {
+    "lat": 42.33918,
+    "long": -71.07861,
+    "name": "Ebenezer Baptist Church"
+  }, {
+    "lat": 42.313735,
+    "long": -71.114662,
+    "name": "Eglise Baptiste Pierre Angulaire"
+  }, {
+    "lat": 42.295169,
+    "long": -71.087231,
+    "name": "Eglise de Dieu de la Pentecôte Libre"
+  }, {
+    "lat": 42.320809,
+    "long": -71.085656,
+    "name": "Eliot Church of Roxbury"
+  }, {
+    "lat": 42.315301,
+    "long": -71.08369,
+    "name": "Emmanuel Temple Pentecostal Church, Inc."
+  }, {
+    "lat": 42.3093,
+    "long": -71.0831,
+    "name": "End Time Prophetic Deliverance Center"
+  }, {
+    "lat": 42.29884,
+    "long": -71.07301,
+    "name": "Ephese Seventh Day Adventist Church"
+  }, {
+    "lat": 42.326428,
+    "long": -71.087407,
+    "name": "Ethiopian Evangelical Church"
+  }, {
+    "lat": 42.31136,
+    "long": -71.08162,
+    "name": "First Haitian Baptist Church of Boston"
+  }, {
+    "lat": 42.30816,
+    "long": -71.06204,
+    "name": "First Parish Church In Dorchester"
+  }, {
+    "lat": 42.29913,
+    "long": -71.0732,
+    "name": "First Star Holiness Church, Inc."
+  }, {
+    "lat": 42.32212,
+    "long": -71.07696,
+    "name": "Garden of Prayer COGIC"
+  }, {
+    "lat": 42.31715,
+    "long": -71.08752,
+    "name": "God's House of Restoration"
+  }, {
+    "lat": 42.335457,
+    "long": -71.078698,
+    "name": "Gospel Proclaiming Mission"
+  }, {
+    "lat": 42.31717,
+    "long": -71.09799,
+    "name": "Grace and Hope Mission Inc"
+  }, {
+    "lat": 42.33435,
+    "long": -71.07913,
+    "name": "Grant AME Church"
+  }, {
+    "lat": 42.29994,
+    "long": -71.08511,
+    "name": "Greater Anointing Harvest Church"
+  }, {
+    "lat": 42.29689,
+    "long": -71.07865,
+    "name": "Greater Friendship Missionary Baptist Church"
+  }, {
+    "lat": 42.309044,
+    "long": -71.07356,
+    "name": "Greater Harvest Worship Center"
+  }, {
+    "lat": 42.31354,
+    "long": -71.07495,
+    "name": "Greater Zion Church"
+  }, {
+    "lat": 42.330267,
+    "long": -71.077908,
+    "name": "Heartchange Fellowship"
+  }, {
+    "lat": 42.309044,
+    "long": -71.07356,
+    "name": "HOGSIC Victory Chapel Church"
+  }, {
+    "lat": 42.316974,
+    "long": -71.072578,
+    "name": "Holy Family Parish"
+  }, {
+    "lat": 42.317526,
+    "long": -71.090148,
+    "name": "Holy Mount Zion Church"
+  }, {
+    "lat": 42.306403,
+    "long": -71.081259,
+    "name": "Holy Tabernacle Church of God in Christ Apostolic, Inc."
+  }, {
+    "lat": 42.32884,
+    "long": -71.08882,
+    "name": "Holy Temple Church, Inc."
+  }, {
+    "lat": 42.3109,
+    "long": -71.10986,
+    "name": "Hope Central Church"
+  }, {
+    "lat": 42.31149,
+    "long": -71.10276,
+    "name": "Iglesia de Cristo Misionera, Inc."
+  }, {
+    "lat": 42.299195,
+    "long": -71.073778,
+    "name": "Iglesia de Cristo Misionera, MI"
+  }, {
+    "lat": 42.23642,
+    "long": -71.13085,
+    "name": "Iglesia de Dios Pentecostal"
+  }, {
+    "lat": 42.322682,
+    "long": -71.102445,
+    "name": "Iglesia de Dios Pentecostal \"Roca de Consolacion\""
+  }, {
+    "lat": 42.300919,
+    "long": -71.066929,
+    "name": "Iglesia de Dios Pentecostal Monte de Los Olivos Aicu"
+  }, {
+    "lat": 42.32428,
+    "long": -71.10822,
+    "name": "Iglesia de Dios Pentecostal, M.I., J.P."
+  }, {
+    "lat": 42.322682,
+    "long": -71.102445,
+    "name": "Iglesia de Dois, Inc. , Jamaica Plain"
+  }, {
+    "lat": 42.303116,
+    "long": -71.071264,
+    "name": "Iglesia de Dos Pentecostal Esmirna, M.I."
+  }, {
+    "lat": 42.3183,
+    "long": -71.06762,
+    "name": "Iglesia El Buen Pastor, A.G."
+  }, {
+    "lat": 42.315983,
+    "long": -71.066619,
+    "name": "Iglesia el Mesia"
+  }, {
+    "lat": 42.30108,
+    "long": -71.07265,
+    "name": "Iglesia Evangelica Columna y Valuarte de la Verdad"
+  }, {
+    "lat": 42.3109,
+    "long": -71.10986,
+    "name": "Iglesia Hispana de la Comunidad Hope Church"
+  }, {
+    "lat": 42.3054,
+    "long": -71.06847,
+    "name": "Iglesia Monte de Santidad"
+  }, {
+    "lat": 42.30769,
+    "long": -71.06137,
+    "name": "Iglesia Pentecostal Fuente de Vida"
+  }, {
+    "lat": 42.29677,
+    "long": -71.07248,
+    "name": "Iglesia Pentecostal Monte de Horeb"
+  }, {
+    "lat": 42.31397,
+    "long": -71.09985,
+    "name": "Iglesia Reformada Emanuel"
+  }, {
+    "lat": 42.326309,
+    "long": -71.075843,
+    "name": "Iglesia Samaria Evangelica, Inc."
+  }, {
+    "lat": 42.330905,
+    "long": -71.093373,
+    "name": "Islamic Society of Boston Cultural Center"
+  }, {
+    "lat": 42.31531,
+    "long": -71.09901,
+    "name": "Jesu Cristo La Unica Esperanza"
+  }, {
+    "lat": 42.29696,
+    "long": -71.07828,
+    "name": "Joy and Gladness Pentecostal Church, Inc."
+  }, {
+    "lat": 42.309048,
+    "long": -71.075406,
+    "name": "Life Church Ministries, Inc."
+  }, {
+    "lat": 42.30744,
+    "long": -71.07044,
+    "name": "Lord and Christ Fellowship"
+  }, {
+    "lat": 42.31275,
+    "long": -71.0778,
+    "name": "Manning Temple Holy Church of Love"
+  }, {
+    "lat": 42.311517,
+    "long": -71.080342,
+    "name": "Masjid Al-Quran"
+  }, {
+    "lat": 42.30504,
+    "long": -71.06824,
+    "name": "Men and Women of Crossroads Ministries"
+  }, {
+    "lat": 42.309044,
+    "long": -71.07356,
+    "name": "Mercy and Grace Ministries"
+  }, {
+    "lat": 42.32246,
+    "long": -71.10508,
+    "name": "Missionary Association of Haitian Christians Church"
+  }, {
+    "lat": 42.332762,
+    "long": -71.083246,
+    "name": "Mosque For the Praising-Allah"
+  }, {
+    "lat": 42.338112,
+    "long": -71.079757,
+    "name": "Mount Calvary Baptist Church"
+  }, {
+    "lat": 42.31265,
+    "long": -71.08119,
+    "name": "Mount Calvary Holy Church of America"
+  }, {
+    "lat": 42.31735,
+    "long": -71.05646,
+    "name": "Mount Hebron Baptist Church"
+  }, {
+    "lat": 42.31408,
+    "long": -71.06799,
+    "name": "Mountain of fire and miracles ministries, Boston"
+  }, {
+    "lat": 42.30831,
+    "long": -71.0827,
+    "name": "Muhammad's Mosque #11"
+  }, {
+    "lat": 42.30788,
+    "long": -71.08007,
+    "name": "New faith Missionary Baptist Church"
+  }, {
+    "lat": 42.302954,
+    "long": -71.084931,
+    "name": "New Fellowship Baptist Church"
+  }, {
+    "lat": 42.298033,
+    "long": -71.086638,
+    "name": "New Hope Church of God in Christ"
+  }, {
+    "lat": 42.31269,
+    "long": -71.08537,
+    "name": "New Life Resurrection Baptist Church"
+  }, {
+    "lat": 42.30237,
+    "long": -71.0828,
+    "name": "New Rehoboth Bethel Apostolic Church, Inc."
+  }, {
+    "lat": 42.29688,
+    "long": -71.07197,
+    "name": "New Testament Church of God, House of Deliverance"
+  }, {
+    "lat": 42.29888,
+    "long": -71.065945,
+    "name": "New Testament Pentecostal Church of God in Christ"
+  }, {
+    "lat": 42.30772,
+    "long": -71.07614,
+    "name": "New Vision Church International, Inc."
+  }, {
+    "lat": 42.32637,
+    "long": -71.0746,
+    "name": "Nueva Vida"
+  }, {
+    "lat": 42.32774,
+    "long": -71.05721,
+    "name": "Our Lady of Czestochowa Church"
+  }, {
+    "lat": 42.313218,
+    "long": -71.102359,
+    "name": "Our Lady of Lourdes Catholic Church"
+  }, {
+    "lat": 42.30007,
+    "long": -71.06655,
+    "name": "Pentecostal House of Prayer for all People"
+  }, {
+    "lat": 42.33812,
+    "long": -71.08188,
+    "name": "Peoples Baptist Church"
+  }, {
+    "lat": 42.315983,
+    "long": -71.066619,
+    "name": "Pilgrim Trinitarian Congregational Church"
+  }, {
+    "lat": 42.31454,
+    "long": -71.08873,
+    "name": "Pleasant Hill Baptist Church"
+  }, {
+    "lat": 42.30026,
+    "long": -71.0834,
+    "name": "Power in the Word Chapel"
+  }, {
+    "lat": 42.31149,
+    "long": -71.10276,
+    "name": "Primera Iglesia de Dios Pentecostal, M.I."
+  }, {
+    "lat": 42.3215,
+    "long": -71.07247,
+    "name": "Primera Iglesia de Jesu Cristo el Buen Samaritano"
+  }, {
+    "lat": 42.31198,
+    "long": -71.07134,
+    "name": "Quincy Street Missional Church"
+  }, {
+    "lat": 42.327627,
+    "long": -71.090172,
+    "name": "Refuge Church of Christ"
+  }, {
+    "lat": 42.32587,
+    "long": -71.08075,
+    "name": "Refuge Temple Church of Jesus Christ Apostolic, Inc."
+  }, {
+    "lat": 42.32726,
+    "long": -71.08276,
+    "name": "Resurrection lutheran Church"
+  }, {
+    "lat": 42.31309,
+    "long": -71.08076,
+    "name": "Rising Star Pentecostal Church"
+  }, {
+    "lat": 42.31499,
+    "long": -71.05236,
+    "name": "Rissho Kosei Kai Buddhist Center"
+  }, {
+    "lat": 42.31969,
+    "long": -71.11113,
+    "name": "River of Life Church"
+  }, {
+    "lat": 42.319494,
+    "long": -71.081131,
+    "name": "Roxbury Presbyterian Church"
+  }, {
+    "lat": 42.326718,
+    "long": -71.077333,
+    "name": "Salem Hispanic Seventh Day Adventist Church"
+  }, {
+    "lat": 42.30504,
+    "long": -71.06824,
+    "name": "Salvation Christian Center"
+  }, {
+    "lat": 42.321932,
+    "long": -71.074473,
+    "name": "Sermon on the Mount Baptist Church"
+  }, {
+    "lat": 42.33563,
+    "long": -71.0801,
+    "name": "Shawmut Community Church of God"
+  }, {
+    "lat": 42.341162,
+    "long": -71.072859,
+    "name": "South End Neighborhood Church of Emmanuel"
+  }, {
+    "lat": 42.326075,
+    "long": -71.081653,
+    "name": "Southern Baptist Church Inc."
+  }, {
+    "lat": 42.309665,
+    "long": -71.06645,
+    "name": "Spanish Church of God of Boston"
+  }, {
+    "lat": 42.31787,
+    "long": -71.07768,
+    "name": "Spirit and Life Bible Church & GodHead Prayer Ministry"
+  }, {
+    "lat": 42.318231,
+    "long": -71.101578,
+    "name": "St. Andrew's United Methodist Church"
+  }, {
+    "lat": 42.335623,
+    "long": -71.0794,
+    "name": "St. Augustine's and St. Martin's Episcopal Church"
+  }, {
+    "lat": 42.340653,
+    "long": -71.08728,
+    "name": "St. Botolph's Church, Anglican Catholic"
+  }, {
+    "lat": 42.336197,
+    "long": -71.086832,
+    "name": "St. Cyprian's Episcopal Church"
+  }, {
+    "lat": 42.32492,
+    "long": -71.09117,
+    "name": "St. James African Orthodox Church"
+  }, {
+    "lat": 42.32295,
+    "long": -71.08186,
+    "name": "St. John Missionary Baptist Church"
+  }, {
+    "lat": 42.307459,
+    "long": -71.08432,
+    "name": "St. Katherine Drexel"
+  }, {
+    "lat": 42.314301,
+    "long": -71.07622,
+    "name": "St. Mark Pentecostal House of Prayer For All People"
+  }, {
+    "lat": 42.34023,
+    "long": -71.07399,
+    "name": "St. Mary's Ethiopian Tewahedo Church"
+  }, {
+    "lat": 42.323223,
+    "long": -71.073724,
+    "name": "St. Patricks Catholic Church"
+  }, {
+    "lat": 42.34023,
+    "long": -71.07399,
+    "name": "St. Stephen's Episcopal Church"
+  }, {
+    "lat": 42.30415,
+    "long": -71.08146,
+    "name": "St.Mark Episocopal Church"
+  }, {
+    "lat": 42.32648,
+    "long": -71.08159,
+    "name": "Tabernacle of Prayer Apostolic Church"
+  }, {
+    "lat": 42.316398,
+    "long": -71.063013,
+    "name": "Templo Adventista del Septimo Dia, Hispana de Boston"
+  }, {
+    "lat": 42.33741,
+    "long": -71.06842,
+    "name": "The Boston Bahá’í Community"
+  }, {
+    "lat": 42.328805,
+    "long": -71.092211,
+    "name": "Timothy Baptist Church"
+  }, {
+    "lat": 42.31385,
+    "long": -71.09207,
+    "name": "Tree of Life Church"
+  }, {
+    "lat": 42.31307,
+    "long": -71.11066,
+    "name": "Trinity Latvian Evangelical Lutheran Church in Boston"
+  }, {
+    "lat": 42.33559,
+    "long": -71.08027,
+    "name": "Trinity Temple"
+  }, {
+    "lat": 42.31969,
+    "long": -71.11113,
+    "name": "Unidos En Cristo"
+  }, {
+    "lat": 42.32246,
+    "long": -71.10508,
+    "name": "United Baptist Church"
+  }, {
+    "lat": 42.30029,
+    "long": -71.08238,
+    "name": "Victory Christian Fellowship Ministries"
+  }, {
+    "lat": 42.3194,
+    "long": -71.08118,
+    "name": "Warren Street Baptist Church"
+  }, {
+    "lat": 42.31908,
+    "long": -71.1002,
+    "name": "Word of Life Tabernacle"
+  }, {
+    "lat": 42.31629,
+    "long": -71.07837,
+    "name": "Zion Apostolic Church"
+  }, {
+    "lat": 42.296552,
+    "long": -71.080654,
+    "name": "Zion Assembly Apostolic Church"
+  }, {
+    "lat": 42.328337,
+    "long": -71.082493,
+    "name": "Zion Fire Baptized Holiness Church of God of the Americas"
+  }, {
+    "lat": 42.34203,
+    "long": -71.14051,
+    "name": "Baldwin Early Learning Center"
+  }, {
+    "lat": 42.34908,
+    "long": -71.14549,
+    "name": "Brighton High School"
+  }, {
+    "lat": 42.300789,
+    "long": -71.06177,
+    "name": "Community Academy of Science and Health"
+  }, {
+    "lat": 42.35226,
+    "long": -71.15305,
+    "name": "Conservatory Lab Charter School ( K - 5)"
+  }, {
+    "lat": 42.36076,
+    "long": -71.13411,
+    "name": "Gardner Pilot Academy"
+  }, {
+    "lat": 42.35212,
+    "long": -71.16076,
+    "name": "Garfield Elementary School"
+  }, {
+    "lat": 42.360285,
+    "long": -71.13608,
+    "name": "German International School Boston (preK - 8)"
+  }, {
+    "lat": 42.34011,
+    "long": -71.15474,
+    "name": "Hamilton Elementary School"
+  }, {
+    "lat": 42.35205,
+    "long": -71.1377,
+    "name": "Horace Mann School for the Deaf and Hard of Hearing"
+  }, {
+    "lat": 42.35205,
+    "long": -71.1377,
+    "name": "Jackson/Mann School"
+  }, {
+    "lat": 42.35107,
+    "long": -71.1615,
+    "name": "Mary Lyon K-8 School"
+  }, {
+    "lat": 42.351339,
+    "long": -71.151577,
+    "name": "Mesivta High School of Greater (9 - 12)"
+  }, {
+    "lat": 42.352109,
+    "long": -71.14253,
+    "name": "Mount Saint Jospeh Academy (High School)"
+  }, {
+    "lat": 42.34786,
+    "long": -71.1544,
+    "name": "Shaloh House Hebrew Day School (preK - 5)"
+  }, {
+    "lat": 42.35226,
+    "long": -71.15305,
+    "name": "St. Columbkille Elementary (K1 - 8)"
+  }, {
+    "lat": 42.34558,
+    "long": -71.16019,
+    "name": "Thomas A. Edison Middle School"
+  }, {
+    "lat": 42.347593,
+    "long": -71.155348,
+    "name": "Winship Elementary School"
+  }, {
+    "lat": 42.35289,
+    "long": -71.06408,
+    "name": "ABCD, Inc."
+  }, {
+    "lat": 42.35289,
+    "long": -71.06408,
+    "name": "Action for Boston Community Development, Inc. (ABCD)"
+  }, {
+    "lat": 42.3527,
+    "long": -71.06088,
+    "name": "Boston ElderINFO"
+  }, {
+    "lat": 42.351824,
+    "long": -71.05758,
+    "name": "Boston Senior Home Care (BSHC)"
+  }, {
+    "lat": 42.34369,
+    "long": -71.14105,
+    "name": "Caritas Good Samaritan Hospice"
+  }, {
+    "lat": 42.3302,
+    "long": -71.08463,
+    "name": "Central Boston Elder Services"
+  }, {
+    "lat": 42.360295,
+    "long": -71.05827,
+    "name": "City of Boston Elderly Commission"
+  }, {
+    "lat": 42.30855,
+    "long": -71.108,
+    "name": "Ethos"
+  }, {
+    "lat": 42.3642,
+    "long": -71.06047,
+    "name": "Greater Boston Legal Services"
+  }, {
+    "lat": 42.32884,
+    "long": -71.08328,
+    "name": "Nuestra Communidad"
+  }, {
+    "lat": 42.348246,
+    "long": -71.153428,
+    "name": "Veronica B. Smith Multi-Service Senior Center"
+  }, {
+    "lat": 42.35225,
+    "long": -71.132078,
+    "name": "Allston/Brighton Area Planning Action Center (APAC)"
+  }, {
+    "lat": 42.350179,
+    "long": -71.06061,
+    "name": "Catholic Charities of Boston"
+  }, {
+    "lat": 42.353223,
+    "long": -71.166109,
+    "name": "Crittenton Women’s Union"
+  }, {
+    "lat": 42.364123,
+    "long": -71.06182,
+    "name": "Jewish Family & Children’s Service"
+  }, {
+    "lat": 42.349574,
+    "long": -71.147979,
+    "name": "Allston Brighton Substance Abuse Task Force"
+  }, {
+    "lat": 42.358081,
+    "long": -71.133935,
+    "name": "Granada House"
+  }, {
+    "lat": 42.355111,
+    "long": -71.063003,
+    "name": "Bridge Over Troubled Waters"
+  }, {
+    "lat": 42.346463,
+    "long": -71.144578,
+    "name": "Commonwealth Tenants Association"
+  }, {
+    "lat": 42.317521,
+    "long": -71.090071,
+    "name": "New Testament House of Worship"
+  }, {
+    "lat": 42.31966,
+    "long": -71.09655,
+    "name": "Mary Eliza Mahoney House"
+  }, {
+    "lat": 42.292237,
+    "long": -71.064309,
+    "name": "Massachusetts Affordable Housing Alliance (MAHA)"
+  }, {
+    "lat": 42.31499,
+    "long": -71.05236,
+    "name": "Boston Bangla Center"
+  }, {
+    "lat": 42.28951,
+    "long": -71.083913,
+    "name": "Franklin Field"
+  }, {
+    "lat": 42.345708,
+    "long": -71.151516,
+    "name": "William F. Joyce Playground"
+  }, {
+    "lat": 42.339966,
+    "long": -71.082166,
+    "name": "Columbus Avenue AME Zion Church"
+  }, {
+    "lat": 42.332921,
+    "long": -71.100116,
+    "name": "Mission Church"
+  }, {
+    "lat": 42.31839,
+    "long": -71.11166,
+    "name": "Primera Iglesia Bautista Hispana, Jamaica Plain"
+  }, {
+    "lat": 0,
+    "long": 0,
+    "name": "Salvation Army Roxbury Center"
+  }, {
+    "lat": 42.335281,
+    "long": -71.084185,
+    "name": "United Emmanuel Holiness Church, Inc."
+  }, {
+    "lat": 42.334825,
+    "long": -71.073496,
+    "name": "Boston Medical Center"
+  }, {
+    "lat": 42.35296,
+    "long": -71.06108,
+    "name": "Massachusetts Association of Older Americans"
+  }, {
+    "lat": 42.33987,
+    "long": -71.07875,
+    "name": "New Hope Baptist Church"
+  }, {
+    "lat": 42.351591,
+    "long": -71.165966,
+    "name": "P.F.C. Kevin Barry Hardiman Playground"
+  }, {
+    "lat": 42.350167,
+    "long": -71.14462,
+    "name": "Franciscan Family Child Care Center"
+  }, {
+    "lat": 42.342634,
+    "long": -71.054962,
+    "name": "Hadlock, Kathy H."
+  }, {
+    "lat": 42.350167,
+    "long": -71.14462,
+    "name": "Pedicare (Medical Child Care)"
+  }, {
+    "lat": 42.34448,
+    "long": -71.14678,
+    "name": "Salzberg, Sara"
+  }, {
+    "lat": 42.367569,
+    "long": -71.053989,
+    "name": "BCYF Mirabella Pool"
+  }, {
+    "lat": 42.322425,
+    "long": -71.090164,
+    "name": "BCYF Shelburne Community Center"
+  }, {
+    "lat": 42.33221,
+    "long": -71.09814,
+    "name": "BCYF Tobin Community Center"
+  }, {
+    "lat": 42.30827,
+    "long": -71.07559,
+    "name": "Family House Shelter"
+  }, {
+    "lat": 0,
+    "long": 0,
+    "name": "Salvation Army"
+  }, {
+    "lat": 42.33309,
+    "long": -71.052171,
+    "name": "Steriti Memorial Ice Rink"
+  }, {
+    "lat": 42.348572,
+    "long": -71.063788,
+    "name": "Wang YMCA"
+  }, {
+    "lat": 42.350167,
+    "long": -71.14462,
+    "name": "Franciscan Hospital for Children"
+  }, {
+    "lat": 42.331878,
+    "long": -71.050206,
+    "name": "Genesis II"
+  }, {
+    "lat": 42.34217,
+    "long": -71.05033,
+    "name": "Mass Coalition for the Homeless"
+  }, {
+    "lat": 42.356794,
+    "long": -71.05863,
+    "name": "International Institute of Boston (IIB)"
+  }, {
+    "lat": 42.31242,
+    "long": -71.11397,
+    "name": "Mass Energy Consumers Alliance"
+  }, {
+    "lat": 42.300982,
+    "long": -71.054413,
+    "name": "Massachusetts Housing Partnership"
+  }, {
+    "lat": 42.338413,
+    "long": -71.046137,
+    "name": "Bosnian Community Center for Resource Development"
+  }, {
+    "lat": 42.355194,
+    "long": -71.13241,
+    "name": "Brazilian Immigrant Center"
+  }, {
+    "lat": 42.352664,
+    "long": -71.053567,
+    "name": "Consulate General of Japan"
+  }, {
+    "lat": 42.33574,
+    "long": -71.09152,
+    "name": "Alice Heyward Taylor"
+  }, {
+    "lat": 42.294701,
+    "long": -71.09249,
+    "name": "Lena Park Housing Development"
+  }, {
+    "lat": 42.337362,
+    "long": -71.082659,
+    "name": "Lenox/Camden"
+  }, {
+    "lat": 42.333963,
+    "long": -71.09865,
+    "name": "Mission Main"
+  }, {
+    "lat": 42.334397,
+    "long": -71.088785,
+    "name": "Whittier Street"
+  }, {
+    "lat": 42.31698,
+    "long": -71.0657,
+    "name": "Bible Way Christian Center"
+  }, {
+    "lat": 42.31595,
+    "long": -71.06596,
+    "name": "Born again Evangelistic outreach Ministry"
+  }, {
+    "lat": 42.3216,
+    "long": -71.07165,
+    "name": "Canaan Defenders of the Christian Faith Church"
+  }, {
+    "lat": 42.30297,
+    "long": -71.07175,
+    "name": "Chief Cornerstone Church of God Apostolic"
+  }, {
+    "lat": 42.31507,
+    "long": -71.07834,
+    "name": "Christ Apostolic Church Mount Joy"
+  }, {
+    "lat": 42.29741,
+    "long": -71.08434,
+    "name": "Door of Hope"
+  }, {
+    "lat": 42.33049,
+    "long": -71.08221,
+    "name": "Eglise de Dieu Sinaï"
+  }, {
+    "lat": 42.316603,
+    "long": -71.077905,
+    "name": "Eglise Haïtienne du Dernier Message"
+  }, {
+    "lat": 42.30108,
+    "long": -71.07265,
+    "name": "First Christian Union Church of Boston"
+  }, {
+    "lat": 42.31377,
+    "long": -71.08622,
+    "name": "House of Judah Ministries"
+  }, {
+    "lat": 42.31004,
+    "long": -71.1063,
+    "name": "Iglesia Canaan Defensores de la Fe, Jamaica Plain"
+  }, {
+    "lat": 42.332229,
+    "long": -71.099859,
+    "name": "Iglesia de Cristo Misionera, Mission Hill"
+  }, {
+    "lat": 42.33047,
+    "long": -71.09749,
+    "name": "Iglesia de Dios, M.B., Mission Hill"
+  }, {
+    "lat": 42.31024,
+    "long": -71.08178,
+    "name": "Iglesia Defensores de la Fe, Segunda"
+  }, {
+    "lat": 42.332685,
+    "long": -71.072922,
+    "name": "Iglesia Metodista Libre Faro Divino"
+  }, {
+    "lat": 42.31606,
+    "long": -71.0625,
+    "name": "Iglesia Pentecostal \"Jesus es el Señor\""
+  }, {
+    "lat": 42.340653,
+    "long": -71.08728,
+    "name": "Mosaic Boston"
+  }, {
+    "lat": 42.30173,
+    "long": -71.08192,
+    "name": "Mount Joy Church of God in Christ Jesus"
+  }, {
+    "lat": 42.29668,
+    "long": -71.0796,
+    "name": "Mt. Pleasant Holiness Church, Inc."
+  }, {
+    "lat": 42.332685,
+    "long": -71.072922,
+    "name": "New Direction Church"
+  }, {
+    "lat": 42.29411,
+    "long": -71.08628,
+    "name": "New England World Church"
+  }, {
+    "lat": 42.301555,
+    "long": -71.082215,
+    "name": "New Mount Calvary"
+  }, {
+    "lat": 42.31004,
+    "long": -71.1063,
+    "name": "Primera Iglesia de Dios, Inc."
+  }, {
+    "lat": 42.293956,
+    "long": -71.083709,
+    "name": "Rebirth Missionary Baptist"
+  }, {
+    "lat": 42.327103,
+    "long": -71.106342,
+    "name": "Shawmut Springs Church"
+  }, {
+    "lat": 42.33047,
+    "long": -71.09749,
+    "name": "Spainish Church of God"
+  }, {
+    "lat": 42.31712,
+    "long": -71.08601,
+    "name": "St. Mark Congregational Church"
+  }, {
+    "lat": 42.313684,
+    "long": -71.09609,
+    "name": "St. Mary of the Angels Catholic Church"
+  }, {
+    "lat": 42.316603,
+    "long": -71.077905,
+    "name": "St. Paul Church Pentecost Temple of the Holy Ghost"
+  }, {
+    "lat": 42.30774,
+    "long": -71.064659,
+    "name": "St. Peter's Catholic Church, Dorchester"
+  }, {
+    "lat": 42.32969,
+    "long": -71.09112,
+    "name": "True Vine Missionary Baptist"
+  }, {
+    "lat": 42.30618,
+    "long": -71.06735,
+    "name": "Universal Church of God in Christ Outreach Ministry"
+  }, {
+    "lat": 42.31507,
+    "long": -71.05603,
+    "name": "Waymark Seventh-Day Adventist Church"
+  }, {
+    "lat": 42.35031,
+    "long": -71.14547,
+    "name": "Another Course to College"
+  }, {
+    "lat": 42.35031,
+    "long": -71.14547,
+    "name": "Boston Community Leadership Academy"
+  }, {
+    "lat": 42.331005,
+    "long": -71.08793,
+    "name": "Boston Public Schools North Zone Family Resource Center"
+  }, {
+    "lat": 42.35672,
+    "long": -71.15216,
+    "name": "Faneuil Teen Center"
+  }, {
+    "lat": 42.349897,
+    "long": -71.137179,
+    "name": "West End House Boys & Girls Club"
+  }, {
+    "lat": 42.334797,
+    "long": -71.049588,
+    "name": "MAB Community Services"
+  }, {
+    "lat": 42.332904,
+    "long": -71.052329,
+    "name": "Shelter Inc. - Boston Family Shelter"
+  }, {
+    "lat": 42.34218,
+    "long": -71.05033,
+    "name": "Family Ties of Massachusetts"
+  }, {
+    "lat": 42.335917,
+    "long": -71.049671,
+    "name": "Boston Early Intervention for Children and Families"
+  }, {
+    "lat": 42.33253,
+    "long": -71.05187,
+    "name": "Keeping Pace with Multiple Miracles"
+  }, {
+    "lat": 42.340314,
+    "long": -71.049958,
+    "name": "Parents Helping Parents"
+  }, {
+    "lat": 42.341317,
+    "long": -71.051379,
+    "name": "Brigid’s Crossing"
+  }, {
+    "lat": 42.332904,
+    "long": -71.052329,
+    "name": "Hildebrand Family Self Help Center/s.sites"
+  }, {
+    "lat": 42.33911,
+    "long": -71.04943,
+    "name": "St. Patrick’s Shelter for Homeless Women"
+  }, {
+    "lat": 42.373646,
+    "long": -71.051699,
+    "name": "ACCION USA"
+  }, {
+    "lat": 42.341877,
+    "long": -71.050149,
+    "name": "Asian Cultural Center"
+  }, {
+    "lat": 42.34113,
+    "long": -71.05108,
+    "name": "Bate Papo Magazine"
+  }, {
+    "lat": 42.332904,
+    "long": -71.052329,
+    "name": "Cambridge Human Rights Commission"
+  }, {
+    "lat": 42.373646,
+    "long": -71.051699,
+    "name": "Chinese Christian Church of Grace in Malden"
+  }, {
+    "lat": 42.332904,
+    "long": -71.052329,
+    "name": "Mass. Alliance of Portuguese Speakers (MAPS)"
+  }, {
+    "lat": 42.373646,
+    "long": -71.051699,
+    "name": "Congregación León de Judá"
+  }, {
+    "lat": 42.340314,
+    "long": -71.049958,
+    "name": "MAB Community Services"
+  }, {
+    "lat": 42.341351,
+    "long": -71.048438,
+    "name": "Jewish Family & Children’s Service"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Cleveland Community Center"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Hyde Square Task Force"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Mattapan Community Health Center"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Bradshaw Children's Learning Program"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Chinese Church Head Start"
+  }, {
+    "lat": null,
+    "long": null,
+    "name": "Early Head Start at Geneva Ave"
+  }]
+}
