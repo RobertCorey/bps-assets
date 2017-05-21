@@ -28,9 +28,14 @@ function drawMap(assets) {
     app.filterByCategory($('#category-dropdown :selected').text());
   })
 
-  new google.maps.places.Autocomplete(document.getElementById('places-input'))
-    .bindTo('bounds', map);
+  var autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
+  autocomplete.bindTo('bounds', map);
 
+  autocomplete.addListener('place_changed', function () {
+    var place = autocomplete.getPlace();
+    console.log(place.geometry);
+  });
+  window.autocomplete = autocomplete;
   app.plotAssets();
 }
 
