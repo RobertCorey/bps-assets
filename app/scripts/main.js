@@ -17,7 +17,8 @@ function drawMap(assets) {
     zoom: 13,
     center: boston
   });
-  // window.map = map;
+
+
   let app = new App(assets, map);
   app.categories.forEach(category => {
     $('#category-dropdown').append(`<option>${category}</option>`);
@@ -27,8 +28,10 @@ function drawMap(assets) {
     app.filterByCategory($('#category-dropdown :selected').text());
   })
 
+  new google.maps.places.Autocomplete(document.getElementById('places-input'))
+    .bindTo('bounds', map);
+
   app.plotAssets();
-  window.app = app;
 }
 
 let App = class {

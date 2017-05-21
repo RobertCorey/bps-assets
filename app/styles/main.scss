@@ -1,6 +1,6 @@
 $icon-font-path: '../fonts/';
 // bower:scss
-// @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 /* Space out content a bit */
@@ -25,6 +25,10 @@ body {
 }
 
 .section {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.side-bar-input {
+  width: 300px;
 }

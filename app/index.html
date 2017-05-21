@@ -25,17 +25,32 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="container-fluid" id="side-bar">
-      <div class="row">
-        <h1>Boston Community Assets</h1>
-      </div>
-      <div class="row section">
-        <h4>Filter By Category</h4>
-        <select name="" id="category-dropdown" class="form-control">
-          <option value="">All</option>
-        </select>
-      </div>
+  <div class=>
+    <div id="side-bar">
+      <h1>Boston Community Assets</h1>
+
+      <form action="">
+        <div class="row section">
+          <h4>Filter By Category</h4>
+          <select id="category-dropdown" class="side-bar-input">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="row section">
+          <h4>Filter By Radius</h4>
+          <span class="side-bar-label">Address: </span>
+          <input type="text" id="places-input" class="side-bar-input">
+          <span class="side-bar-label">Maximum Distance: </span>
+          <select name="" id="radius">
+            <option value="0.5">0.5 Miles</option>
+            <!--grammar check needed-->
+            <option value="1">1 Mile</option>
+            <option value="1.5">1.5 Miles</option>
+            <option value="2">2 Miles</option>
+          </select>
+          <button class="btn btn-primary">Filter</button>
+        </div>
+      </form>
     </div>
     <div id="map"></div>
   </div>
@@ -63,6 +78,7 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -83,7 +99,7 @@
 
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgzVY-chPD4EZIDc2oj8hec2hXFYFm4og&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgzVY-chPD4EZIDc2oj8hec2hXFYFm4og&callback=initMap&libraries=places"></script>
   <!-- endbuild -->
 </body>
 
