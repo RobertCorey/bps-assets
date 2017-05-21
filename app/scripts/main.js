@@ -9,14 +9,15 @@ function initMap() {
 
 function drawMap(assets) {
   var boston = {
-    lat: 42.361145,
-    lng: -71.057083
+    lat: 42.33894360169467,
+    lng: -71.1169069898682
   };
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
+    zoom: 13,
     center: boston
   });
+  // window.map = map;
   let app = new App(assets, map);
   app.categories.forEach(category => {
     $('#category-dropdown').append(`<option>${category}</option>`);
