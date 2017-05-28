@@ -6,21 +6,28 @@ let DataService = class {
   }
 
   normalizeData (assetObj) {
-    return assetObj.assets.map(asset => {
-      return {
-        address: asset.Address_Te,
-        lat: asset.MatchLatit,
-        lng: asset.MatchLongi,
-        organization: asset.Organizati,
-        website: asset.Website,
-        phone: asset.Phone_Numb,
-        fax: asset.Fax,
-        email: asset.Email,
-        languages: asset.Languages,
-        information: asset.Informatio,
-        category: asset.Category
+    function isEmpty(str) {
+      return (!str || /^\s*$/.test(str));
+    }
+    return assetObj.assets.reduce((result, asset) => {
+      if(!isEmpty(asset.MatchLatit)) {
+        let transformed = {
+          address: asset.Address_Te,
+          lat: asset.MatchLatit,
+          lng: asset.MatchLongi,
+          organization: asset.Organizati,
+          website: asset.Website,
+          phone: asset.Phone_Numb,
+          fax: asset.Fax,
+          email: asset.Email,
+          languages: asset.Languages,
+          information: asset.Informatio,
+          category: asset.Category
+        }
+        result.push(transformed);
       }
-    });
+      return result;
+    }, []);
   }
 };
 
