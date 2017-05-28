@@ -1,8 +1,7 @@
 //needs to be global for callback
 function initMap() {
   bps.dataService.getData().done(result => {
-    // drawMap(result.assets)
-    console.log(result);
+    drawMap(result);
   })
 }
 function getMeters(miles) {
@@ -53,7 +52,6 @@ function drawMap(assets) {
   });
   // end test
 
-  window.autocomplete = autocomplete;
   app.plotAssets();
 }
 
@@ -65,12 +63,11 @@ let App = class {
     this.currentMarkers = [];
   }
 
-  parse(assets) {
-    this.categories = [...new Set(this.assets.map(item => item.Category))];
+  parse() {
+    this.categories = [...new Set(this.assets.map(item => item.category))];
   }
 
   filterByCategory(category) {
-    console.log(category);
     if (this.currentCategory === category) {
       return;
     } else if (category === 'All') {
@@ -78,7 +75,7 @@ let App = class {
     } else {
       this.clearAssets();
       this.plotAssets(this.assets.filter(asset => {
-        return asset.Category === category;
+        return asset.category === category;
       }));
     }
   }
@@ -110,8 +107,8 @@ let App = class {
 
       let marker = new google.maps.Marker({
         position: {
-          lat: asset.MatchLatit,
-          lng: asset.MatchLongi
+          lat: asset.lat,
+          lng: asset.lng
         },
         map: this.map,
       });
@@ -138,46 +135,22 @@ let App = class {
     });
     this.currentMarkers = [];
   }
-  /**
-   * "OBJECTID": 1,
-        "Address_Te": "27 Newton St, Brighton, MA 02135",
-        "Matched": "True",
-        "Match_Scor": "10",
-        "Match_Text": "27 Newton St, Brighton, MA 02135",
-        "Match_Type": "Address",
-        "Match_Id": 102313,
-        "MatchXCoor": 747072.253795,
-        "MatchYCoor": 2955193.432012,
-        "MatchLatit": 42.35671,
-        "MatchLongi": -71.16367,
-        "Match_Code": "ADDRESS_EXACT,XY_IMPROVEMENT",
-        "Organizati": "Acosta, Jacqueline",
-        "Address": "27 Newton St Apt B, Brighton, MA 02135-1706",
-        "Website": " ",
-        "Phone_Numb": "617-787-1289",
-        "Fax": " ",
-        "Email": " ",
-        "Languages": " ",
-        "Informatio": "Family Childcare Provider",
-        "Verified_": " ",
-        "Category": "Child Care and Resources"
-  */
   getInfoWindowDom(asset, isSchool) {
     if (isSchool) {
       return '';
     } else {
       return `
         <div class="info-window">
-          <h3>${asset.Organizati}</h3>
+          <h3>${asset.organization}</h3>
           <table class="table">
-            <tr><td>Address</td><td> ${asset.Address_Te}</td></tr>
-            <tr><td>Website</td><td> ${asset.Website}</td></tr>
-            <tr><td>Phone</td><td> ${asset.Phone_Numb}</td></tr>
-            <tr><td>Fax	</td><td> ${asset.Fax}</td></tr>
-            <tr><td>Email	</td><td> ${asset.Email}</td></tr>
-            <tr><td>Languages	</td><td> ${asset.Languages}</td></tr>
-            <tr><td>Information</td><td> ${asset.Informatio}</td></tr>
-            <tr><td>Category</td><td> ${asset.Category}</td></tr>
+            <tr><td>Address</td><td> ${asset.address}</td></tr>
+            <tr><td>Website</td><td> ${asset.website}</td></tr>
+            <tr><td>Phone</td><td> ${asset.phone}</td></tr>
+            <tr><td>Fax	</td><td> ${asset.fax}</td></tr>
+            <tr><td>Email	</td><td> ${asset.email}</td></tr>
+            <tr><td>Languages	</td><td> ${asset.languages}</td></tr>
+            <tr><td>Information</td><td> ${asset.information}</td></tr>
+            <tr><td>Category</td><td> ${asset.category}</td></tr>
           </table>
         </div>
       `;
