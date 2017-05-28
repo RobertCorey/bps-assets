@@ -6,6 +6,9 @@ function initMap() {
   })
 }
 
+function getMeters(miles) {
+  return miles * 1609.344;
+}
 
 function drawMap(assets) {
   var boston = {
@@ -30,11 +33,12 @@ function drawMap(assets) {
 
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
   autocomplete.bindTo('bounds', map);
-
   autocomplete.addListener('place_changed', function () {
     var place = autocomplete.getPlace();
-    console.log(place.geometry);
+    console.log(place);
+    app.filterByLocation(place);
   });
+
   window.autocomplete = autocomplete;
   app.plotAssets();
 }
@@ -63,6 +67,23 @@ let App = class {
         return asset.Category === category;
       }));
     }
+  }
+
+  filterByLocation(place, radius) {
+    var cityCircle = new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      map: this.map,
+      center: {
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng(),
+      },
+      radius: getMeters(1)
+    });
+    return true;
   }
 
   plotAssets(assets) {
