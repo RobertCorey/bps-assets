@@ -37,6 +37,7 @@ function drawMap(assets) {
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
   autocomplete.bindTo('bounds', map);
   autocomplete.addListener('place_changed', function () {
+    window.foo = autocomplete.getPlace();
     var place = autocomplete.getPlace();
     app.filterByLocation(place, 1.5);
   });
@@ -60,6 +61,7 @@ let App = class {
     this.map = map;
     this.parse(this.assets);
     this.currentMarkers = [];
+    this.currentAssets = [];
   }
 
   parse() {
@@ -70,12 +72,15 @@ let App = class {
     if (this.currentCategory === category) {
       return;
     } else if (category === 'All') {
+      this.currentAssets = this.assets;
+      this.clearAssets();
       this.plotAssets();
     } else {
-      this.clearAssets();
-      this.plotAssets(this.assets.filter(asset => {
+      this.currentAssets = this.assets.filter(asset => {
         return asset.category === category;
-      }));
+      });
+      this.clearAssets();
+      this.plotAssets();
     }
   }
 
@@ -98,19 +103,19 @@ let App = class {
         place.geometry.location.lng()
     );
     radius = getMeters(radius);
-    let circle = this.drawCircle(center, radius);
     let filtered = this.assets.filter(asset => {
       let point = new google.maps.LatLng(asset.lat, asset.lng);
       let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
       return distance < radius;
     });
+    this.currentAssets = filtered;
     this.clearAssets();
-    this.plotAssets(filtered);
+    this.currentCircle = this.drawCircle(center, radius);
+    this.plotAssets();
   }
 
-  plotAssets(assets) {
-    assets = assets ? assets : this.assets;
-    assets.forEach((asset) => {
+  plotAssets() {
+    this.currentAssets.forEach((asset) => {
 
       let marker = new google.maps.Marker({
         position: {
@@ -140,6 +145,9 @@ let App = class {
     this.currentMarkers.forEach(marker => {
       marker.setMap(null);
     });
+    if (this.currentCircle) {
+      this.currentCircle.setMap(null);
+    }
     this.currentMarkers = [];
   }
   getInfoWindowDom(asset, isSchool) {
