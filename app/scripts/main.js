@@ -1,11 +1,10 @@
-var dataRequest = $.get('../data/boston-main-assets.json');
 //needs to be global for callback
 function initMap() {
-  dataRequest.done(result => {
-    drawMap(result.assets)
+  bps.dataService.getData().done(result => {
+    // drawMap(result.assets)
+    console.log(result);
   })
 }
-
 function getMeters(miles) {
   return miles * 1609.344;
 }
@@ -27,6 +26,7 @@ function drawMap(assets) {
 
 
   let app = new App(assets, map);
+  window.app = app;
   app.categories.forEach(category => {
     $('#category-dropdown').append(`<option>${category}</option>`);
   });
@@ -84,7 +84,7 @@ let App = class {
   }
 
   drawCircle (center, radius) {
-    var cityCircle = new google.maps.Circle({
+    return new google.maps.Circle({
       strokeColor: '#FF0000',
       strokeOpacity: 0.8,
       strokeWeight: 2,
@@ -97,11 +97,11 @@ let App = class {
   }
 
   filterByLocation(place, radius) {
-    this.drawCircle({
+    let circle = this.drawCircle({
         lat: place.geometry.location.lat(),
         lng: place.geometry.location.lng(),
       }, 1);
-    return true;
+    
   }
 
   plotAssets(assets) {
