@@ -21,6 +21,10 @@ function drawMap(assets) {
     center: boston
   });
 
+  google.maps.Circle.prototype.contains = function(latLng) {
+    return this.getBounds().contains(latLng) && google.maps.geometry.spherical.computeDistanceBetween(this.getCenter(), latLng) <= this.getRadius();
+  }
+
 
   let app = new App(assets, map);
   app.categories.forEach(category => {
@@ -38,6 +42,16 @@ function drawMap(assets) {
     console.log(place);
     app.filterByLocation(place);
   });
+  // test
+  var geocoder = new google.maps.Geocoder();
+  geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
+    if (status === 'OK') {
+      app.filterByLocation(results[0]);
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+  // end test
 
   window.autocomplete = autocomplete;
   app.plotAssets();
@@ -69,7 +83,7 @@ let App = class {
     }
   }
 
-  filterByLocation(place, radius) {
+  drawCircle (center, radius) {
     var cityCircle = new google.maps.Circle({
       strokeColor: '#FF0000',
       strokeOpacity: 0.8,
@@ -77,12 +91,16 @@ let App = class {
       fillColor: '#FF0000',
       fillOpacity: 0.35,
       map: this.map,
-      center: {
+      center: center,
+      radius: getMeters(radius)
+    });
+  }
+
+  filterByLocation(place, radius) {
+    this.drawCircle({
         lat: place.geometry.location.lat(),
         lng: place.geometry.location.lng(),
-      },
-      radius: getMeters(1)
-    });
+      }, 1);
     return true;
   }
 
