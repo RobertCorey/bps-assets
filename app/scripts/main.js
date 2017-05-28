@@ -89,16 +89,24 @@ let App = class {
       fillOpacity: 0.35,
       map: this.map,
       center: center,
-      radius: getMeters(radius)
+      radius: radius
     });
   }
 
   filterByLocation(place, radius) {
-    let circle = this.drawCircle({
-        lat: place.geometry.location.lat(),
-        lng: place.geometry.location.lng(),
-      }, 1);
-    
+    let center = new google.maps.LatLng(
+        place.geometry.location.lat(),
+        place.geometry.location.lng()
+    );
+    let radiusMeters = getMeters(1);
+    let circle = this.drawCircle(center, radiusMeters);
+    let filtered = this.assets.filter(asset => {
+      let point = new google.maps.LatLng(asset.lat, asset.lng);
+      let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
+      return distance < radiusMeters;
+    });
+    this.clearAssets();
+    this.plotAssets(filtered);
   }
 
   plotAssets(assets) {
