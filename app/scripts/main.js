@@ -42,14 +42,14 @@ function drawMap(assets) {
     app.filterByLocation(place);
   });
   // test
-  var geocoder = new google.maps.Geocoder();
-  geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
-    if (status === 'OK') {
-      app.filterByLocation(results[0]);
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
+  // var geocoder = new google.maps.Geocoder();
+  // geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
+  //   if (status === 'OK') {
+  //     app.filterByLocation(results[0]);
+  //   } else {
+  //     alert('Geocode was not successful for the following reason: ' + status);
+  //   }
+  // });
   // end test
 
   app.plotAssets();
@@ -61,22 +61,39 @@ let App = class {
     this.map = map;
     this.parse(this.assets);
     this.currentMarkers = [];
+    this.filters = [
+      {
+        name: 'category',
+        function: this.filterByCategory,
+        params: {
+          category: 'All'
+        },
+        active: false
+      },
+      {
+        name: 'location',
+        function: this.filterByLocation,
+        params: {
+          location: null,
+          radius: null
+        },
+        active: false,
+      }
+    ];
   }
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
   }
 
-  filterByCategory(category) {
-    if (this.currentCategory === category) {
-      return;
-    } else if (category === 'All') {
-      this.plotAssets();
+  filterByCategory(assets, params) {
+    let category = params.category;
+    if (this.currentCategory === category || category === 'ALL') {
+      return assets;
     } else {
-      this.clearAssets();
-      this.plotAssets(this.assets.filter(asset => {
+      return assets.filter(asset => {
         return asset.category === category;
-      }));
+      });
     }
   }
 
@@ -93,26 +110,41 @@ let App = class {
     });
   }
 
-  filterByLocation(place, radius) {
+  filterByLocation(assets, params) {
+    if(!params.location) {
+      return assets;
+    }
+    let location = params.location;
+    let radius = params.radius;
     let center = new google.maps.LatLng(
-        place.geometry.location.lat(),
-        place.geometry.location.lng()
+        location.geometry.location.lat(),
+        location.geometry.location.lng()
     );
     let radiusMeters = getMeters(1);
     let circle = this.drawCircle(center, radiusMeters);
-    let filtered = this.assets.filter(asset => {
+    return assets.filter(asset => {
       let point = new google.maps.LatLng(asset.lat, asset.lng);
       let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
       return distance < radiusMeters;
     });
-    this.clearAssets();
-    this.plotAssets(filtered);
   }
 
-  plotAssets(assets) {
-    assets = assets ? assets : this.assets;
-    assets.forEach((asset) => {
+  filterAssets () {
+    let activeFilters = this.filters.filter(filter => {
+      return filter.active;
+    });
+    let assets = this.assets;
+    activeFilters.forEach(filter => {
+      assets = filter.function(filter.params);
+    });
+    return assets;
+  }
 
+  plotAssets() {
+    this.clearAssets();
+    let filteredAssets = this.filterAssets();
+
+    filteredAssets.forEach((asset) => {
       let marker = new google.maps.Marker({
         position: {
           lat: asset.lat,
@@ -143,6 +175,7 @@ let App = class {
     });
     this.currentMarkers = [];
   }
+  
   getInfoWindowDom(asset, isSchool) {
     if (isSchool) {
       return '';
