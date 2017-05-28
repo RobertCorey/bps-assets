@@ -38,14 +38,13 @@ function drawMap(assets) {
   autocomplete.bindTo('bounds', map);
   autocomplete.addListener('place_changed', function () {
     var place = autocomplete.getPlace();
-    console.log(place);
-    app.filterByLocation(place);
+    app.filterByLocation(place, 1.5);
   });
   // test
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
     if (status === 'OK') {
-      app.filterByLocation(results[0]);
+      app.filterByLocation(results[0], 1.5);
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
@@ -98,12 +97,12 @@ let App = class {
         place.geometry.location.lat(),
         place.geometry.location.lng()
     );
-    let radiusMeters = getMeters(1);
-    let circle = this.drawCircle(center, radiusMeters);
+    radius = getMeters(radius);
+    let circle = this.drawCircle(center, radius);
     let filtered = this.assets.filter(asset => {
       let point = new google.maps.LatLng(asset.lat, asset.lng);
       let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
-      return distance < radiusMeters;
+      return distance < radius;
     });
     this.clearAssets();
     this.plotAssets(filtered);
