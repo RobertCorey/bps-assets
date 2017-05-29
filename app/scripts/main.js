@@ -26,33 +26,19 @@ function drawMap(assets) {
 
   let app = new App(assets, map);
   window.app = app;
-  app.categories.forEach(category => {
-    $('#category-dropdown').append(`<option>${category}</option>`);
-  });
 
-  $('#category-dropdown').change(() => {
-    app.filterByCategory($('#category-dropdown :selected').text());
-  })
-
-  var autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
-  autocomplete.bindTo('bounds', map);
-  autocomplete.addListener('place_changed', function () {
-    var place = autocomplete.getPlace();
-    console.log(place);
-    app.filterByLocation(place);
-  });
   // test
   // var geocoder = new google.maps.Geocoder();
   // geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
   //   if (status === 'OK') {
-  //     app.filterByLocation(results[0]);
+  //     app.filterByLocation(results[0], 1.5);
   //   } else {
   //     alert('Geocode was not successful for the following reason: ' + status);
   //   }
   // });
   // end test
 
-  app.plotAssets();
+  app.filter();
 }
 
 let App = class {
@@ -61,34 +47,67 @@ let App = class {
     this.map = map;
     this.parse(this.assets);
     this.currentMarkers = [];
-    this.filters = [
-      {
-        name: 'category',
-        function: this.filterByCategory,
-        params: {
-          category: 'All'
-        },
-        active: false
-      },
-      {
-        name: 'location',
-        function: this.filterByLocation,
-        params: {
-          location: null,
-          radius: null
-        },
-        active: false,
-      }
-    ];
+    this.currentAssets = [];
+    this.setupDom();
+  }
+
+  setupDom() {
+    var that = this;
+
+    this.autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
+    this.autocomplete.bindTo('bounds', this.map);
+    this.autocomplete.addListener('place_changed', function () {
+      that.handlePlaceInput();
+    });
+
+    $('#clear-address').click(() => {
+      that.clearCurrentPlace();
+    })
+
+    this.categories.forEach(category => {
+      $('#category-dropdown').append(`<option>${category}</option>`);
+    });
+
+    $('#category-dropdown').change(() => {
+      that.filter();
+    })
+
+    $('#radius').change(() => { that.filter(); });
+
+    $('#printout-button').click(() => { that.printCurrent(); });
+  }
+
+  handlePlaceInput() {
+    this.currentPlace = this.autocomplete.getPlace();
+    $('#current-address').html(this.currentPlace.formatted_address);
+    $('#places-input').val('');
+    $('#clear-address').show();
+    this.filter();
+  }
+
+  clearCurrentPlace() {
+    this.currentPlace = null;
+    $('#current-address').html('None');
+    $('#clear-address').hide();
+    this.filter();
   }
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
+    window.foo = this.categories;
   }
 
-  filterByCategory(assets, params) {
-    let category = params.category;
-    if (this.currentCategory === category || category === 'ALL') {
+  filter() {
+    this.clearAssets();
+    let categoryFiltered = this.filterByCategory(this.assets, $('#category-dropdown :selected').text());
+    this.currentAssets = this.filterByLocation(categoryFiltered, this.autocomplete.getPlace(), $('#radius').val());
+    this.plotAssets();
+  }
+
+  filterByCategory(assets, category) {
+    if (this.currentCategory === category) {
+      return assets;
+    } else if (category === 'All') {
       return assets;
     } else {
       return assets.filter(asset => {
@@ -110,41 +129,25 @@ let App = class {
     });
   }
 
-  filterByLocation(assets, params) {
-    if(!params.location) {
+  filterByLocation(assets) {
+    if (!this.currentPlace) {
       return assets;
     }
-    let location = params.location;
-    let radius = params.radius;
     let center = new google.maps.LatLng(
-        location.geometry.location.lat(),
-        location.geometry.location.lng()
+        this.currentPlace.geometry.location.lat(),
+        this.currentPlace.geometry.location.lng()
     );
-    let radiusMeters = getMeters(1);
-    let circle = this.drawCircle(center, radiusMeters);
+    let radius = getMeters($('#radius').val());
+    this.currentCircle = this.drawCircle(center, radius);
     return assets.filter(asset => {
       let point = new google.maps.LatLng(asset.lat, asset.lng);
       let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
-      return distance < radiusMeters;
+      return distance < radius;
     });
-  }
-
-  filterAssets () {
-    let activeFilters = this.filters.filter(filter => {
-      return filter.active;
-    });
-    let assets = this.assets;
-    activeFilters.forEach(filter => {
-      assets = filter.function(filter.params);
-    });
-    return assets;
   }
 
   plotAssets() {
-    this.clearAssets();
-    let filteredAssets = this.filterAssets();
-
-    filteredAssets.forEach((asset) => {
+    this.currentAssets.forEach((asset) => {
       let marker = new google.maps.Marker({
         position: {
           lat: asset.lat,
@@ -173,9 +176,13 @@ let App = class {
     this.currentMarkers.forEach(marker => {
       marker.setMap(null);
     });
+    if (this.currentCircle) {
+      this.currentCircle.setMap(null);
+    }
+    this.currentAssets = [];
     this.currentMarkers = [];
   }
-  
+
   getInfoWindowDom(asset, isSchool) {
     if (isSchool) {
       return '';
@@ -184,17 +191,27 @@ let App = class {
         <div class="info-window">
           <h3>${asset.organization}</h3>
           <table class="table">
-            <tr><td>Address</td><td> ${asset.address}</td></tr>
-            <tr><td>Website</td><td> ${asset.website}</td></tr>
-            <tr><td>Phone</td><td> ${asset.phone}</td></tr>
+            <tr><td>Address </td><td> ${asset.address}</td></tr>
+            <tr><td>Website </td><td> ${asset.website}</td></tr>
+            <tr><td>Phone </td><td> ${asset.phone}</td></tr>
             <tr><td>Fax	</td><td> ${asset.fax}</td></tr>
             <tr><td>Email	</td><td> ${asset.email}</td></tr>
             <tr><td>Languages	</td><td> ${asset.languages}</td></tr>
-            <tr><td>Information</td><td> ${asset.information}</td></tr>
-            <tr><td>Category</td><td> ${asset.category}</td></tr>
+            <tr><td>Information </td><td> ${asset.information}</td></tr>
+            <tr><td>Category </td><td> ${asset.category}</td></tr>
           </table>
         </div>
       `;
     }
+  }
+
+  printCurrent() {
+    let dom = '';
+    this.currentAssets.forEach(asset => {
+      dom += this.getInfoWindowDom(asset, false);
+    }, this);
+    let newTab = window.open('', '');
+    newTab.document.write(dom);
+    newTab.document.close();
   }
 }
