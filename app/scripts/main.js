@@ -53,7 +53,7 @@ let App = class {
 
   setupDom() {
     var that = this;
-    
+
     this.autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
     this.autocomplete.bindTo('bounds', this.map);
     this.autocomplete.addListener('place_changed', function () {
@@ -71,6 +71,10 @@ let App = class {
     $('#category-dropdown').change(() => {
       that.filter();
     })
+
+    $('#radius').change(() => { that.filter(); });
+
+    $('#printout-button').click(() => { that.printCurrent(); });
   }
 
   handlePlaceInput() {
@@ -90,6 +94,7 @@ let App = class {
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
+    window.foo = this.categories;
   }
 
   filter() {
@@ -186,17 +191,27 @@ let App = class {
         <div class="info-window">
           <h3>${asset.organization}</h3>
           <table class="table">
-            <tr><td>Address</td><td> ${asset.address}</td></tr>
-            <tr><td>Website</td><td> ${asset.website}</td></tr>
-            <tr><td>Phone</td><td> ${asset.phone}</td></tr>
+            <tr><td>Address </td><td> ${asset.address}</td></tr>
+            <tr><td>Website </td><td> ${asset.website}</td></tr>
+            <tr><td>Phone </td><td> ${asset.phone}</td></tr>
             <tr><td>Fax	</td><td> ${asset.fax}</td></tr>
             <tr><td>Email	</td><td> ${asset.email}</td></tr>
             <tr><td>Languages	</td><td> ${asset.languages}</td></tr>
-            <tr><td>Information</td><td> ${asset.information}</td></tr>
-            <tr><td>Category</td><td> ${asset.category}</td></tr>
+            <tr><td>Information </td><td> ${asset.information}</td></tr>
+            <tr><td>Category </td><td> ${asset.category}</td></tr>
           </table>
         </div>
       `;
     }
+  }
+
+  printCurrent() {
+    let dom = '';
+    this.currentAssets.forEach(asset => {
+      dom += this.getInfoWindowDom(asset, false);
+    }, this);
+    let newTab = window.open('', '');
+    newTab.document.write(dom);
+    newTab.document.close();
   }
 }

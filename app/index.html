@@ -35,13 +35,14 @@
   <div>
     <div id="side-bar">
       <h1>Boston Community Assets</h1>
-
-      <div class="form-group">
-        <h2>Filter By Category</h2>
-        <label for="">Category: </label>
-        <select id="category-dropdown" class="side-bar-input">
-            <option value="">All</option>
-          </select>
+      <div id="category-filter">
+        <div class="form-group">
+          <h2>Filter By Category</h2>
+          <label for="">Category: </label>
+          <select id="category-dropdown" class="side-bar-input">
+              <option value="">All</option>
+            </select>
+        </div>
       </div>
       <div id="radius-filter">
         <h2>Filter By Radius</h2>
@@ -65,6 +66,12 @@
                 <option value="1.5">1.5 Miles</option>
                 <option value="2">2 Miles</option>
               </select>
+        </div>
+      </div>
+      <div id="category-filter">
+        <div class="form-group">
+          <h2>Generate Printout</h2>
+          <button class="btn btn-success" id="printout-button">Generate Printout</button>
         </div>
       </div>
     </div>
