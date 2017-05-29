@@ -31,25 +31,18 @@ function drawMap(assets) {
   });
 
   $('#category-dropdown').change(() => {
-    app.filterByCategory($('#category-dropdown :selected').text());
+    app.filterByCategory();
   })
 
-  var autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
-  autocomplete.bindTo('bounds', map);
-  autocomplete.addListener('place_changed', function () {
-    window.foo = autocomplete.getPlace();
-    var place = autocomplete.getPlace();
-    app.filterByLocation(place, 1.5);
-  });
   // test
-  var geocoder = new google.maps.Geocoder();
-  geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
-    if (status === 'OK') {
-      app.filterByLocation(results[0], 1.5);
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
+  // var geocoder = new google.maps.Geocoder();
+  // geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
+  //   if (status === 'OK') {
+  //     app.filterByLocation(results[0], 1.5);
+  //   } else {
+  //     alert('Geocode was not successful for the following reason: ' + status);
+  //   }
+  // });
   // end test
 
   app.plotAssets();
@@ -62,10 +55,42 @@ let App = class {
     this.parse(this.assets);
     this.currentMarkers = [];
     this.currentAssets = [];
+    this.setupDom();
+  }
+
+  setupDom() {
+    var that = this;
+    this.autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
+    this.autocomplete.bindTo('bounds', this.map);
+    this.autocomplete.addListener('place_changed', function () {
+      that.handlePlaceInput();
+    });
+    $('#clear-address').click(() => {
+      that.clearCurrentPlace();
+    })
+  }
+
+  handlePlaceInput() {
+    this.currentPlace = this.autocomplete.getPlace();
+    $('#current-address').html(this.currentPlace.formatted_address);
+    $('#places-input').val('');
+    $('#clear-address').show();
+  }
+
+  clearCurrentPlace() {
+    this.currentPlace = null;
+    $('#current-address').html('None');
+    $('#clear-address').hide();
   }
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
+  }
+  filter() {
+    this.clearAssets();
+    this.filterByCategory($('#category-dropdown :selected').text());
+    this.filterByLocation(this.autocomplete.getPlace(), $('#radius').val());
+    this.plotAssets();
   }
 
   filterByCategory(category) {
@@ -73,14 +98,10 @@ let App = class {
       return;
     } else if (category === 'All') {
       this.currentAssets = this.assets;
-      this.clearAssets();
-      this.plotAssets();
     } else {
       this.currentAssets = this.assets.filter(asset => {
         return asset.category === category;
       });
-      this.clearAssets();
-      this.plotAssets();
     }
   }
 
@@ -109,14 +130,11 @@ let App = class {
       return distance < radius;
     });
     this.currentAssets = filtered;
-    this.clearAssets();
     this.currentCircle = this.drawCircle(center, radius);
-    this.plotAssets();
   }
 
   plotAssets() {
     this.currentAssets.forEach((asset) => {
-
       let marker = new google.maps.Marker({
         position: {
           lat: asset.lat,
