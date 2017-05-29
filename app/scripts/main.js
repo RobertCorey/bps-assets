@@ -26,13 +26,6 @@ function drawMap(assets) {
 
   let app = new App(assets, map);
   window.app = app;
-  app.categories.forEach(category => {
-    $('#category-dropdown').append(`<option>${category}</option>`);
-  });
-
-  $('#category-dropdown').change(() => {
-    app.filterByCategory();
-  })
 
   // test
   // var geocoder = new google.maps.Geocoder();
@@ -45,7 +38,7 @@ function drawMap(assets) {
   // });
   // end test
 
-  app.plotAssets();
+  app.filter();
 }
 
 let App = class {
@@ -60,13 +53,23 @@ let App = class {
 
   setupDom() {
     var that = this;
+    
     this.autocomplete = new google.maps.places.Autocomplete(document.getElementById('places-input'));
     this.autocomplete.bindTo('bounds', this.map);
     this.autocomplete.addListener('place_changed', function () {
       that.handlePlaceInput();
     });
+
     $('#clear-address').click(() => {
       that.clearCurrentPlace();
+    })
+
+    this.categories.forEach(category => {
+      $('#category-dropdown').append(`<option>${category}</option>`);
+    });
+
+    $('#category-dropdown').change(() => {
+      that.filter();
     })
   }
 
@@ -75,31 +78,34 @@ let App = class {
     $('#current-address').html(this.currentPlace.formatted_address);
     $('#places-input').val('');
     $('#clear-address').show();
+    this.filter();
   }
 
   clearCurrentPlace() {
     this.currentPlace = null;
     $('#current-address').html('None');
     $('#clear-address').hide();
+    this.filter();
   }
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
   }
+
   filter() {
     this.clearAssets();
-    this.filterByCategory($('#category-dropdown :selected').text());
-    this.filterByLocation(this.autocomplete.getPlace(), $('#radius').val());
+    let categoryFiltered = this.filterByCategory(this.assets, $('#category-dropdown :selected').text());
+    this.currentAssets = this.filterByLocation(categoryFiltered, this.autocomplete.getPlace(), $('#radius').val());
     this.plotAssets();
   }
 
-  filterByCategory(category) {
+  filterByCategory(assets, category) {
     if (this.currentCategory === category) {
-      return;
+      return assets;
     } else if (category === 'All') {
-      this.currentAssets = this.assets;
+      return assets;
     } else {
-      this.currentAssets = this.assets.filter(asset => {
+      return assets.filter(asset => {
         return asset.category === category;
       });
     }
@@ -118,19 +124,21 @@ let App = class {
     });
   }
 
-  filterByLocation(place, radius) {
+  filterByLocation(assets) {
+    if (!this.currentPlace) {
+      return assets;
+    }
     let center = new google.maps.LatLng(
-        place.geometry.location.lat(),
-        place.geometry.location.lng()
+        this.currentPlace.geometry.location.lat(),
+        this.currentPlace.geometry.location.lng()
     );
-    radius = getMeters(radius);
-    let filtered = this.assets.filter(asset => {
+    let radius = getMeters($('#radius').val());
+    this.currentCircle = this.drawCircle(center, radius);
+    return assets.filter(asset => {
       let point = new google.maps.LatLng(asset.lat, asset.lng);
       let distance = google.maps.geometry.spherical.computeDistanceBetween(center, point);
       return distance < radius;
     });
-    this.currentAssets = filtered;
-    this.currentCircle = this.drawCircle(center, radius);
   }
 
   plotAssets() {
@@ -166,8 +174,10 @@ let App = class {
     if (this.currentCircle) {
       this.currentCircle.setMap(null);
     }
+    this.currentAssets = [];
     this.currentMarkers = [];
   }
+
   getInfoWindowDom(asset, isSchool) {
     if (isSchool) {
       return '';
