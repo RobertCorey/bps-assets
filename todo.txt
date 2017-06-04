@@ -1,0 +1,20 @@
+add icons
+find icons
+business logic
+
+backend
+crud solution
+firebase
+
+boston public schools
+hook up
+add to data layer
+talk to api directly
+
+radius
+jump to address
+
+* UX
+have explict 'enter address button' for users to add radius
+
+* add analytics

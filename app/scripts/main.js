@@ -2,87 +2,87 @@
 let categories = {
   "categories": [{
       "name": "Child Care and Resources",
-      "icon": "child_care.svg"
+      "icon": "child_care.png"
     },
     {
       "name": "Community Center",
-      "icon": "business.svg"
+      "icon": "business.png"
     },
     {
       "name": "Disabilities & Special Needs",
-      "icon": "accessible.svg"
+      "icon": "accessible.png"
     },
     {
       "name": "Early Childhood Support",
-      "icon": "pregnant_woman.svg"
+      "icon": "pregnant_woman.png"
     },
     {
       "name": "Early Intervention",
-      "icon": "pan_tool.svg"
+      "icon": "pan_tool.png"
     },
     {
       "name": "Family Support",
-      "icon": "group.svg"
+      "icon": "group.png"
     },
     {
       "name": "Health",
-      "icon": "spa.svg"
+      "icon": "spa.png"
     },
     {
       "name": "Homelessness",
-      "icon": "airline_seat_flat.svg"
+      "icon": "airline_seat_flat.png"
     },
     {
       "name": "Housing & Financial Counseling",
-      "icon": "home.svg"
+      "icon": "home.png"
     },
     {
       "name": "Immigrant Services",
-      "icon": "public.svg"
+      "icon": "public.png"
     },
     {
       "name": "Libraries",
-      "icon": "local_library.svg"
+      "icon": "local_library.png"
     },
     {
       "name": "Media",
-      "icon": "chrome_reader_mode.svg"
+      "icon": "chrome_reader_mode.png"
     },
     {
       "name": "Mental Health",
-      "icon": "local_hospital.svg"
+      "icon": "local_hospital.png"
     },
     {
       "name": "Municipal Agency",
-      "icon": "local_mall.svg"
+      "icon": "local_mall.png"
     },
     {
       "name": "Recreation",
-      "icon": "nature_people.svg"
+      "icon": "nature_people.png"
     },
     {
       "name": "Religious Institution",
-      "icon": "all_inclusive.svg"
+      "icon": "all_inclusive.png"
     },
     {
       "name": "Schools",
-      "icon": "school.svg"
+      "icon": "school.png"
     },
     {
       "name": "Senior Services",
-      "icon": "cake.svg"
+      "icon": "cake.png"
     },
     {
       "name": "Social Services",
-      "icon": "weekend.svg"
+      "icon": "weekend.png"
     },
     {
       "name": "Substance Abuse",
-      "icon": "healing.svg"
+      "icon": "healing.png"
     },
     {
       "name": "Youth Services",
-      "icon": "child_friendly.svg"
+      "icon": "child_friendly.png"
     }
   ]
 };
