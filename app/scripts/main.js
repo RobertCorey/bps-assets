@@ -1,4 +1,92 @@
 //needs to be global for callback
+let categories = {
+  "categories": [{
+      "name": "Child Care and Resources",
+      "icon": "child_care.svg"
+    },
+    {
+      "name": "Community Center",
+      "icon": "business.svg"
+    },
+    {
+      "name": "Disabilities & Special Needs",
+      "icon": "accessible.svg"
+    },
+    {
+      "name": "Early Childhood Support",
+      "icon": "pregnant_woman.svg"
+    },
+    {
+      "name": "Early Intervention",
+      "icon": "pan_tool.svg"
+    },
+    {
+      "name": "Family Support",
+      "icon": "group.svg"
+    },
+    {
+      "name": "Health",
+      "icon": "spa.svg"
+    },
+    {
+      "name": "Homelessness",
+      "icon": "airline_seat_flat.svg"
+    },
+    {
+      "name": "Housing & Financial Counseling",
+      "icon": "home.svg"
+    },
+    {
+      "name": "Immigrant Services",
+      "icon": "public.svg"
+    },
+    {
+      "name": "Libraries",
+      "icon": "local_library.svg"
+    },
+    {
+      "name": "Media",
+      "icon": "chrome_reader_mode.svg"
+    },
+    {
+      "name": "Mental Health",
+      "icon": "local_hospital.svg"
+    },
+    {
+      "name": "Municipal Agency",
+      "icon": "local_mall.svg"
+    },
+    {
+      "name": "Recreation",
+      "icon": "nature_people.svg"
+    },
+    {
+      "name": "Religious Institution",
+      "icon": "all_inclusive.svg"
+    },
+    {
+      "name": "Schools",
+      "icon": "school.svg"
+    },
+    {
+      "name": "Senior Services",
+      "icon": "cake.svg"
+    },
+    {
+      "name": "Social Services",
+      "icon": "weekend.svg"
+    },
+    {
+      "name": "Substance Abuse",
+      "icon": "healing.svg"
+    },
+    {
+      "name": "Youth Services",
+      "icon": "child_friendly.svg"
+    }
+  ]
+};
+
 function initMap() {
   bps.dataService.getData().done(result => {
     drawMap(result);
@@ -19,6 +107,16 @@ function drawMap(assets) {
     center: boston
   });
 
+  for (var key in assets) {
+    if (assets.hasOwnProperty(key)) {
+      var element = assets[key];
+      assets[key].icon = categories.categories.filter((category) => {
+        return element.category === category.name;
+      })[0].icon;
+    }
+  }
+
+  console.log(assets);
   google.maps.Circle.prototype.contains = function(latLng) {
     return this.getBounds().contains(latLng) && google.maps.geometry.spherical.computeDistanceBetween(this.getCenter(), latLng) <= this.getRadius();
   }
@@ -26,17 +124,6 @@ function drawMap(assets) {
 
   let app = new App(assets, map);
   window.app = app;
-
-  // test
-  // var geocoder = new google.maps.Geocoder();
-  // geocoder.geocode({'address': '184 Dudley Street, Roxbury, MA 02119'}, function(results, status) {
-  //   if (status === 'OK') {
-  //     app.filterByLocation(results[0], 1.5);
-  //   } else {
-  //     alert('Geocode was not successful for the following reason: ' + status);
-  //   }
-  // });
-  // end test
 
   app.filter();
 }
@@ -154,6 +241,7 @@ let App = class {
           lng: asset.lng
         },
         map: this.map,
+        icon: '/images/icons/' + asset.icon
       });
 
       let infoWindow = new google.maps.InfoWindow({

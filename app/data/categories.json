@@ -1,0 +1,87 @@
+{
+  "categories": [{
+      "name": "Child Care and Resources",
+      "icon": "child_care"
+    },
+    {
+      "name": "Community Center",
+      "icon": "business"
+    },
+    {
+      "name": "Disabilities & Special Needs",
+      "icon": "accessible"
+    },
+    {
+      "name": "Early Childhood Support",
+      "icon": "pregnant_woman"
+    },
+    {
+      "name": "Early Intervention",
+      "icon": "pan_tool"
+    },
+    {
+      "name": "Family Support",
+      "icon": "group"
+    },
+    {
+      "name": "Health",
+      "icon": "spa"
+    },
+    {
+      "name": "Homelessness",
+      "icon": "airline_seat_flat"
+    },
+    {
+      "name": "Housing & Financial Counseling",
+      "icon": "home"
+    },
+    {
+      "name": "Immigrant Services",
+      "icon": "public"
+    },
+    {
+      "name": "Libraries",
+      "icon": "local_library"
+    },
+    {
+      "name": "Media",
+      "icon": "chrome_reader_mode"
+    },
+    {
+      "name": "Mental Health",
+      "icon": "local_hospital"
+    },
+    {
+      "name": "Municipal Agency",
+      "icon": "local_mall"
+    },
+    {
+      "name": "Recreation",
+      "icon": "nature_people"
+    },
+    {
+      "name": "Religious Institution",
+      "icon": "all_inclusive"
+    },
+    {
+      "name": "Schools",
+      "icon": "school"
+    },
+    {
+      "name": "Senior Services",
+      "icon": "cake"
+    },
+    {
+      "name": "Social Services",
+      "icon": "weekend"
+    },
+    {
+      "name": "Substance Abuse",
+      "icon": "healing"
+    },
+    {
+      "name": "Youth Services",
+      "icon": "child_friendly"
+    }
+  ]
+}
