@@ -1,10 +1,7 @@
 //needs to be global for callback
-let categories = ;
-
 function initMap() {
   bps.dataService.getData().done(result => {
     bps.dataService.getCategories().done(categories => {
-
       drawMap({
         data: result,
         categories: categories
@@ -23,7 +20,7 @@ function drawMap(data) {
     lng: -71.1169069898682
   };
 
-  let assets = data.assets;
+  let assets = data.data;
   let categories = data.categories; 
 
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -34,20 +31,19 @@ function drawMap(data) {
   for (var key in assets) {
     if (assets.hasOwnProperty(key)) {
       var element = assets[key];
-      assets[key].icon = categories.categories.filter((category) => {
+      var result = categories.categories.filter((category) => {
         return element.category === category.name;
-      })[0].icon;
+      });
+      assets[key].icon = (result.length) ? result[0].icon : null;
     }
   }
 
-  console.log(assets);
   google.maps.Circle.prototype.contains = function(latLng) {
     return this.getBounds().contains(latLng) && google.maps.geometry.spherical.computeDistanceBetween(this.getCenter(), latLng) <= this.getRadius();
   }
 
 
   let app = new App(assets, map);
-  window.app = app;
 
   app.filter();
 }
@@ -105,7 +101,6 @@ let App = class {
 
   parse() {
     this.categories = [...new Set(this.assets.map(item => item.category))];
-    window.foo = this.categories;
   }
 
   filter() {
@@ -166,7 +161,7 @@ let App = class {
           lng: asset.lng
         },
         map: this.map,
-        icon: '/images/icons/' + asset.icon,
+        icon: asset.icon ? ('/images/icons/' + asset.icon) : null,
         zIndex: z
       });
 
