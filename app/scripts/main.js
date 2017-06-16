@@ -103,7 +103,7 @@ function drawMap(assets) {
   };
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
+    zoom: 14,
     center: boston
   });
 
@@ -235,13 +235,15 @@ let App = class {
 
   plotAssets() {
     this.currentAssets.forEach((asset) => {
+      var z = this.categories.indexOf(asset.category);
       let marker = new google.maps.Marker({
         position: {
           lat: asset.lat,
           lng: asset.lng
         },
         map: this.map,
-        icon: '/images/icons/' + asset.icon
+        icon: '/images/icons/' + asset.icon,
+        zIndex: z
       });
 
       let infoWindow = new google.maps.InfoWindow({
