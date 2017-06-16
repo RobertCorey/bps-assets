@@ -1,106 +1,30 @@
 //needs to be global for callback
-let categories = {
-  "categories": [{
-      "name": "Child Care and Resources",
-      "icon": "child_care.png"
-    },
-    {
-      "name": "Community Center",
-      "icon": "business.png"
-    },
-    {
-      "name": "Disabilities & Special Needs",
-      "icon": "accessible.png"
-    },
-    {
-      "name": "Early Childhood Support",
-      "icon": "pregnant_woman.png"
-    },
-    {
-      "name": "Early Intervention",
-      "icon": "pan_tool.png"
-    },
-    {
-      "name": "Family Support",
-      "icon": "group.png"
-    },
-    {
-      "name": "Health",
-      "icon": "spa.png"
-    },
-    {
-      "name": "Homelessness",
-      "icon": "airline_seat_flat.png"
-    },
-    {
-      "name": "Housing & Financial Counseling",
-      "icon": "home.png"
-    },
-    {
-      "name": "Immigrant Services",
-      "icon": "public.png"
-    },
-    {
-      "name": "Libraries",
-      "icon": "local_library.png"
-    },
-    {
-      "name": "Media",
-      "icon": "chrome_reader_mode.png"
-    },
-    {
-      "name": "Mental Health",
-      "icon": "local_hospital.png"
-    },
-    {
-      "name": "Municipal Agency",
-      "icon": "local_mall.png"
-    },
-    {
-      "name": "Recreation",
-      "icon": "nature_people.png"
-    },
-    {
-      "name": "Religious Institution",
-      "icon": "all_inclusive.png"
-    },
-    {
-      "name": "Schools",
-      "icon": "school.png"
-    },
-    {
-      "name": "Senior Services",
-      "icon": "cake.png"
-    },
-    {
-      "name": "Social Services",
-      "icon": "weekend.png"
-    },
-    {
-      "name": "Substance Abuse",
-      "icon": "healing.png"
-    },
-    {
-      "name": "Youth Services",
-      "icon": "child_friendly.png"
-    }
-  ]
-};
+let categories = ;
 
 function initMap() {
   bps.dataService.getData().done(result => {
-    drawMap(result);
+    bps.dataService.getCategories().done(categories => {
+
+      drawMap({
+        data: result,
+        categories: categories
+      });
+
+    })
   })
 }
 function getMeters(miles) {
   return miles * 1609.344;
 }
 
-function drawMap(assets) {
+function drawMap(data) {
   var boston = {
     lat: 42.33894360169467,
     lng: -71.1169069898682
   };
+
+  let assets = data.assets;
+  let categories = data.categories; 
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
