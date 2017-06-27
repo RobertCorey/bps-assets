@@ -44,16 +44,6 @@ function drawMap(data) {
     center: boston
   });
 
-  for (var key in assets) {
-    if (assets.hasOwnProperty(key)) {
-      var element = assets[key];
-      var result = categories.categories.filter((category) => {
-        return element.category === category.name;
-      });
-      assets[key].icon = (result.length) ? result[0].icon : null;
-    }
-  }
-
   google.maps.Circle.prototype.contains = function(latLng) {
     return this.getBounds().contains(latLng) && google.maps.geometry.spherical.computeDistanceBetween(this.getCenter(), latLng) <= this.getRadius();
   }
@@ -182,7 +172,6 @@ let App = class {
           lng: asset.lng
         },
         map: this.map,
-        // icon asset.icon ? ('/images/icons/' + asset.icon) : null,
         icon: a,
         shadow: b,
         zIndex: z
