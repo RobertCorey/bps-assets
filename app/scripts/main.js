@@ -159,8 +159,6 @@ let App = class {
   }
 
   plotAssets() {
-    console.log(colors.length);
-    console.log(this.categories.length);
     this.currentAssets.forEach((asset) => {
       var z = this.categories.indexOf(asset.category);
       let foo = pinSymbol(colors[z % colors.length]);
@@ -208,21 +206,33 @@ let App = class {
     if (isSchool) {
       return '';
     } else {
-      return `
-        <div class="info-window">
-          <h3>${asset.organization}</h3>
-          <table class="table">
-            <tr><td>Address </td><td> ${asset.address}</td></tr>
-            <tr><td>Website </td><td> ${asset.website}</td></tr>
-            <tr><td>Phone </td><td> ${asset.phone}</td></tr>
-            <tr><td>Fax	</td><td> ${asset.fax}</td></tr>
-            <tr><td>Email	</td><td> ${asset.email}</td></tr>
-            <tr><td>Languages	</td><td> ${asset.languages}</td></tr>
-            <tr><td>Information </td><td> ${asset.information}</td></tr>
-            <tr><td>Category </td><td> ${asset.category}</td></tr>
-          </table>
-        </div>
-      `;
+      let template = `<div class="info-window"> <h3>${asset.organization}</h3> <table class="table">`;
+      if(asset.address.trim()) {
+        template += `<tr><td>Address </td><td> ${asset.address}</td></tr>`;
+      }
+      if(asset.website.trim()) {
+        template += `<tr><td>Website </td><td> ${asset.website}</td></tr>`;
+      }
+      if(asset.phone.trim()) {
+        template += `<tr><td>Phone </td><td> ${asset.phone}</td></tr>`;
+      }
+      if(asset.fax.trim()) {
+        template += `<tr><td>Fax	</td><td> ${asset.fax}</td></tr>`;
+      }
+      if(asset.email.trim()) {
+        template += `<tr><td>Email	</td><td> ${asset.email}</td></tr>`;
+      }
+      if(asset.languages.trim()) {
+        template += `<tr><td>Languages	</td><td> ${asset.languages}</td></tr>`;
+      }
+      if(asset.information.trim()) {
+        template += `<tr><td>Information </td><td> ${asset.information}</td></tr>`;
+      }
+      if(asset.category.trim()) {
+        template += `<tr><td>Category </td><td> ${asset.category}</td></tr>`;
+      }
+      template += `</table></div>`;
+      return template;
     }
   }
 
