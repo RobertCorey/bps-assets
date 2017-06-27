@@ -1,4 +1,20 @@
+function pinSymbol(color) {
+      var pinColor = color;
+      pinColor = pinColor.substr(1);
+    var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+        new google.maps.Size(21, 34),
+        new google.maps.Point(0,0),
+        new google.maps.Point(10, 34));
+    var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+        new google.maps.Size(40, 37),
+        new google.maps.Point(0, 0),
+        new google.maps.Point(12, 35));
+  return [pinImage, pinShadow];
+}
+let colors = ['#590000', '#332900', '#00cc36', '#7c92a6', '#660080', '#e51f00', '#f2e200', '#005947', '#00388c', '#d900ca', '#59332d', '#919926', '#30bfa3', '#000733', '#804073', '#592400', '#bfff40', '#00eeff', '#8091ff', '#d90074', '#d97736', '#d0ffbf', '#003c40', '#000080', '#bf8fa9', '#f2ba79', '#688060', '#b6eef2', '#000066', '#73002e', '#bfa98f', '#006600', '#2d98b3', '#464359', '#401023', '#ffaa00', '#005900', '#00aaff', '#3d00e6', '#bf0033', '#996600', '#0d3312', '#004d73', '#e1bfff', '#f27989'];
+
 //needs to be global for callback
+
 function initMap() {
   bps.dataService.getData().done(result => {
     bps.dataService.getCategories().done(categories => {
@@ -153,15 +169,22 @@ let App = class {
   }
 
   plotAssets() {
+    console.log(colors.length);
+    console.log(this.categories.length);
     this.currentAssets.forEach((asset) => {
       var z = this.categories.indexOf(asset.category);
+      let foo = pinSymbol(colors[z % colors.length]);
+      let a = foo[0];
+      let b = foo[1];
       let marker = new google.maps.Marker({
         position: {
           lat: asset.lat,
           lng: asset.lng
         },
         map: this.map,
-        icon: asset.icon ? ('/images/icons/' + asset.icon) : null,
+        // icon asset.icon ? ('/images/icons/' + asset.icon) : null,
+        icon: a,
+        shadow: b,
         zIndex: z
       });
 
