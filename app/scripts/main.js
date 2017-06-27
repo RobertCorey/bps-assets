@@ -106,7 +106,7 @@ let App = class {
   }
 
   parse() {
-    this.categories = [...new Set(this.assets.map(item => item.category))];
+    this.categories = [...new Set(this.assets.map(item => item.category))].sort();
   }
 
   filter() {
